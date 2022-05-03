@@ -1,0 +1,124 @@
+---
+sidebar: sidebar 
+permalink: task_provisioning_volume_view.html 
+keywords: NFS volumes, volume view, creating, mounting, provisioning, create, nfs volumes 
+summary: 您可以使用Cloud Manager建立NFS磁碟區、在AWS儲存設備上提供企業級功能。 
+---
+= 建立及掛載NFS磁碟區
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用Cloud Manager建立NFS磁碟區、在AWS儲存設備上提供企業級功能。
+
+
+
+== 建立NFS磁碟區
+
+您可以建立附加至單一AWS執行個體或鏡射至另一個執行個體的磁碟區、以提供高可用度。
+
+.步驟
+. 在Volumes（磁碟區）索引標籤中、按一下* Create New Volume*（建立新磁
+. 在「Create New Volume」（建立新磁碟區）頁面上、選取一個磁碟區類型：
++
+[cols="15,85"]
+|===
+| 選項 | 說明 
+
+
+| 建立Volume | 建立附加至單一AWS執行個體的Volume。 
+
+
+| 建立HA Volume | 建立附加至單一AWS執行個體的磁碟區、並鏡射至另一個執行個體、以便在發生故障時提供高可用度。按一下「資訊」圖示、即可查看HA Volume所需執行個體的其他詳細資料。 
+|===
+. 如果您選擇「Create Volume」（建立Volume）、請為第一個Volume指定詳細資料、然後按一下「* Create*」。
++
+下表說明您可能需要指導的欄位：
+
++
+[cols="15,85"]
+|===
+| 欄位 | 說明 
+
+
+| 尺寸 | 磁碟區的最大大小取決於現有儲存系統的可用容量。磁碟區會自動啟用精簡配置、讓您建立的磁碟區比目前可用的實體儲存設備還要大。資料寫入時、空間會分配給每個磁碟區、而非預先配置儲存空間。 
+
+
+| AWS磁碟類型  a| 
+您應該選擇符合效能與成本需求的磁碟。
+
+** 通用SSD磁碟可平衡各種工作負載的成本與效能。效能是以 IOPS 定義。
+** 處理量最佳化的HDD磁碟適用於經常存取的工作負載、這些工作負載需要以較低的價格提供快速且一致的處理量。
+** 由於效能極低、因此冷HDD磁碟只能用於備份、或是不常存取的資料。如同處理量最佳化的 HDD 磁碟、效能是以處理量來定義。
+
+
+如需詳細資料、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+
+|===
++
+下圖顯示已填寫「建立Volume」頁面：
+
++
+image:screenshot_volume_view_create.gif["螢幕擷取畫面：顯示已填妥「Create New Volume（建立新Volume）」頁面。"]
+
+. 如果選擇Create HA Volume（創建HA Volume）、請指定該Volume的詳細資料、然後按一下* Create*（建立*）。
++
+下表說明您可能需要指導的欄位：
+
++
+[cols="15,85"]
+|===
+| 欄位 | 說明 
+
+
+| 尺寸 | 磁碟區的最大大小取決於現有儲存系統的可用容量。磁碟區會自動啟用精簡配置、讓您建立的磁碟區比目前可用的實體儲存設備還要大。資料寫入時、空間會分配給每個磁碟區、而非預先配置儲存空間。 
+
+
+| AWS磁碟類型  a| 
+您應該選擇符合效能與成本需求的磁碟。
+
+** 通用SSD磁碟可平衡各種工作負載的成本與效能。效能是以 IOPS 定義。
+** 處理量最佳化的HDD磁碟適用於需要快速且一致處理量的經常存取工作負載。
+
+
+如需詳細資料、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+
+
+
+| 位置 | 您應該在三個獨立的可用性區域中選擇包含三個子網路的VPC。 
+
+
+| 節點與資訊管理器 | 如果可能、Cloud Manager會針對每個執行個體選擇個別的可用性區域、因為它是受支援且最佳化的組態。 
+
+
+| 浮動IP | 該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。 
+
+
+| 路由表 | 如果您有多個路由表、請務必選取正確的路由表。否則、部分用戶端可能無法存取HA配對。如需詳細資料、請參閱  http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。 
+|===
++
+下圖顯示「節點與資訊管理器」頁面。每個執行個體都位於個別的「可用度區域」中。
+
++
+image:screenshot_volume_view_ha_network.gif["螢幕擷取畫面：顯示兩Cloud Volumes ONTAP 個節點和中介器的AWS網路選項。每個執行個體都位於個別的可用度區域和子網路中。"]
+
+
+
+Cloud Manager會在現有系統或新系統上建立磁碟區。如果需要新的系統、建立磁碟區可能需要25分鐘左右的時間。
+
+
+
+== 將磁碟區掛載至Linux主機
+
+建立磁碟區之後、您應該將其掛載到主機上、以便主機存取磁碟區。
+
+.步驟
+. 在Volumes（磁碟區）索引標籤中、將滑鼠游標放在磁碟區上、選取功能表圖示、然後按一下* Mount（掛載）*。
+. 按一下 * 複本 * 。
+. 在Linux主機上、變更目的地目錄以修改複製的文字、然後輸入命令來掛載磁碟區。
+

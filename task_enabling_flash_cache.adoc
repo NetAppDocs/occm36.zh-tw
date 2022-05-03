@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task_enabling_flash_cache.html 
+keywords: cloud volumes ontap, aws, ec2, flash cache, read-intensive, read, random, databases, email, file services, c5d.4xlarge, c5d.9xlarge, r5d.2xlarge, compression, performance 
+summary: 部分EC2執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備可作為Flash Cache使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。 
+---
+= 在Cloud Volumes ONTAP AWS中啟用Flash Cache
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+部分EC2執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用做為_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。
+
+
+NOTE: 重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。
+
+.步驟
+. 請選取下列EC2執行個體類型之一、這些類型可搭配Premium和BYOL授權使用：
++
+** c5d.4xlarge
+** c5d.9xlarge
+** r5d.2xlarge
+
+
+. 停用所有磁碟區的壓縮。
++
+所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。從Cloud Manager建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用 CLI 停用資料壓縮"^]。
+
+

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task_changing_volume_view.html 
+keywords: volume view, changing, selecting, switching, views 
+summary: 您可以切換至Cloud Manager Volume View、無需管理Cloud Volumes ONTAP 任何儲存系統、即可在AWS中建立磁碟區。 
+---
+= 變更為Volume View
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager提供兩種管理檢視：適用於跨混合雲管理儲存系統的Storage System View、以及用於在AWS中建立磁碟區的Volume View、而無需管理儲存系統。您可以在這些檢視之間切換、但這些執行個體應該很少、因為單一檢視應該能滿足您的需求。
+
+如需Volume View的詳細資訊、請參閱 link:concept_storage_management.html#simplified-storage-management-using-the-volume-view["使用Volume View簡化儲存管理"]。
+
+.步驟
+. 在Cloud Manager主控台右上角、按一下功能表、然後按一下*檢視選擇*。
+. 在「檢視選擇」頁面上、選取*儲存系統檢視*、然後按一下*切換*。
+
+
+Cloud Manager會切換至Volume View。

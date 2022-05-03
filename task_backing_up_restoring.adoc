@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task_backing_up_restoring.html 
+keywords: backing up, back up, backup, restore, restoring 
+summary: Cloud Manager可讓您備份及還原資料庫、以保護組態並疑難排解問題。 
+---
+= 備份與還原Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager可讓您備份及還原資料庫、以保護組態並疑難排解問題。
+
+
+
+== 備份Cloud Manager
+
+定期備份Cloud Manager資料庫是很好的做法。如果您遇到問題、可以從先前的備份還原Cloud Manager。
+
+.步驟
+. 在Cloud Manager主控台右上角、按一下工作下拉式清單、然後選取*工具*。
+. 按一下*備份*。
++
+image:screenshot_backup.gif["螢幕擷取畫面：顯示「工具」頁面中的「備份」按鈕。"]
+
+. 出現提示時、請將備份檔案儲存至安全位置、以便在需要時擷取。
+
+
+
+
+== 從備份還原Cloud Manager
+
+從備份還原Cloud Manager會以備份中的資料取代現有資料。
+
+.步驟
+. 在Cloud Manager主控台的右上角、按一下工作下拉式清單、然後選取*工具*。
+. 按一下 * 還原 * 。
+. 單擊*確定*進行確認。
+. 選取備份。
+
+
+Cloud Manager會從備份檔案還原資料庫。

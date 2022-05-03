@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task_setting_up_users_tenants.html 
+keywords: users, adding, creating, tenants 
+summary: Cloud Manager可讓您將額外的Cloud Central使用者新增至Cloud Manager、並使用租戶隔離工作環境。 
+---
+= 設定使用者和租戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager可讓您將額外的Cloud Central使用者新增至Cloud Manager、並使用租戶隔離工作環境。
+
+
+
+== 新增使用者至Cloud Manager
+
+如果有其他使用者需要使用Cloud Manager系統、他們必須在NetApp Cloud Central中註冊帳戶。然後您可以將使用者新增至Cloud Manager。
+
+.步驟
+. 如果使用者尚未在NetApp Cloud Central中擁有帳戶、請傳送Cloud Manager系統連結給他們、讓他們註冊。
++
+等待使用者確認已註冊帳戶。
+
+. 在Cloud Manager中、按一下使用者圖示、然後按一下*檢視使用者*。
+. 按一下「*新增使用者*」。
+. 輸入與使用者帳戶相關的電子郵件地址、選取角色、然後按一下*「Add*（新增*）」。
+
+
+通知使用者現在可以登入Cloud Manager系統。
+
+
+
+== 建立租戶
+
+租戶可讓您將工作環境隔離為不同的群組。您可以在租戶內建立一或多個工作環境。 link:concept_storage_management.html#storage-isolation-using-tenants["深入瞭解租戶"]。
+
+.步驟
+. 按一下租戶圖示、然後按一下*新增租戶*。
++
+image:screenshot_tenants_icon.gif["螢幕擷取畫面：顯示Cloud Manager主控台右上角的租戶圖示（推入針腳）和新增租戶按鈕。"]
+
+. 視需要輸入名稱、說明和成本中心。
+. 按一下「 * 儲存 * 」。
+
+
+您現在可以切換至此新租戶、並將租戶管理員和工作環境管理員新增至此租戶。

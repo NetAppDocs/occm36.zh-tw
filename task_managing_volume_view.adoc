@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task_managing_volume_view.html 
+keywords: NFS volumes, volume view, managing, cloning, clone, delete, deleting, access, disk 
+summary: 您可以透過複製NFS磁碟區、管理資料存取、變更基礎磁碟類型等方式來管理NFS磁碟區。 
+---
+= 管理NFS磁碟區
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以透過複製NFS磁碟區、管理資料存取、變更基礎磁碟類型等方式來管理NFS磁碟區。
+
+
+
+== 複製磁碟區
+
+如果您需要即時複製資料、而不需要使用大量磁碟空間、可以建立現有磁碟區的複本。
+
+複製的磁碟區是可寫入的時間點複本、空間效率極高、因為它會使用少量的空間作為中繼資料、然後只會在資料變更或新增時耗用額外空間。
+
+.步驟
+. 在Volumes（磁碟區）索引標籤中、將滑鼠游標放在磁碟區上、選取功能表圖示、然後按一下* Clone（複製）*。
+. 如有需要、請修改複製的Volume名稱、然後按一下* Clone（複製）*。
+
+
+Cloud Manager會建立一個新的Volume、該磁碟區是現有磁碟區的複本。
+
+
+
+== 管理對磁碟區的資料存取
+
+當您建立Volume時、Cloud Manager會將該Volume提供給建立該Volume的VPC中的所有EC2執行個體。如果需要限制對磁碟區的資料存取、您可以修改此預設值。
+
+.步驟
+. 在「Volumes（磁碟區）」索引標籤中、將滑鼠游標放在磁碟區上、選取功能表圖示、然後按一下「* Manage Access（管理存取）」。
+. 修改Volume存取清單、然後按一下「*儲存*」。
+
+
+
+
+== 變更磁碟區的基礎AWS磁碟
+
+您可以變更磁碟區用來提供儲存設備的基礎AWS磁碟。例如、如果需要更高的效能、您可以從處理量最佳化的HDD變更為通用SSD。
+
+.步驟
+. 在Volumes（磁碟區）索引標籤中、將滑鼠游標放在磁碟區上、選取功能表圖示、然後按一下* Change Disk（變更磁碟）*。
+. 選取AWS磁碟類型、然後按一下*變更*。
+
+
+Cloud Manager 會將磁碟區移至使用所選磁碟類型的現有 Aggregate 、或為磁碟區建立新的 Aggregate 。
+
+
+
+== 檢視及修改AWS資源
+
+當您建立新的Volume時、Cloud Manager會配置該Volume所需的AWS執行個體和EBS儲存設備。如有需要、您可以檢視AWS執行個體和EBS儲存設備的詳細資料、變更執行個體類型、以及關閉和開啟執行個體。
+
+.步驟
+. 按一下* AWS Resources *。
++
+隨即顯示AWS執行個體清單。您可以檢視執行個體類型、AWS位置及附加至執行個體的磁碟區等詳細資料。
+
+. 必要時、選取「狀態」欄旁的功能表圖示、然後選擇其中一個可用的動作：
++
+image:screenshot_volume_view_resources.gif["顯示Volume View AWS資源頁面上可用動作的螢幕擷取畫面。"]
+
+
+
+
+
+== 正在刪除磁碟區
+
+您可以刪除不再需要的磁碟區。
+
+.步驟
+. 在Volumes（磁碟區）索引標籤中、將滑鼠游標放在磁碟區上、選取功能表圖示、然後按一下* Delete（刪除）*。
+. 按一下*刪除*以確認您要刪除磁碟區。
+

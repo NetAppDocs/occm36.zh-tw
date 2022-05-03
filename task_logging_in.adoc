@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task_logging_in.html 
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account 
+summary: 您可以從任何連線至Cloud Manager系統的網頁瀏覽器登入Cloud Manager。您應該使用NetApp Cloud Central使用者帳戶登入。 
+---
+= 登入 Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以從任何連線至Cloud Manager系統的網頁瀏覽器登入Cloud Manager。您應該使用登入 https://cloud.netapp.com["NetApp Cloud Central"^] 使用者帳戶。
+
+.步驟
+. 開啟網頁瀏覽器並登入 https://cloud.netapp.com["NetApp Cloud Central"^]。
+. 按一下*移至Cloud Data Services*、然後選取* Cloud Volumes ONTAP 《*》。
+. 針對您要存取的Cloud Manager系統、按一下*移至Cloud Manager*。
++
+
+TIP: 如果您沒有看到任何列出的系統、請確定Cloud Manager管理員已將您的NetApp Cloud Central帳戶新增至系統。
+
+. 使用您的NetApp Cloud Central帳戶登入Cloud Manager。
++
+image:screenshot_login.gif["Cloud Manager的登入畫面。"]
+
+

@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: concept_storage.html 
+keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity, aws, azure 
+summary: 瞭解 Cloud Volumes ONTAP 如何使用雲端儲存設備、有助於瞭解儲存成本。 
+---
+= 如何使用雲端儲存設備Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+瞭解 Cloud Volumes ONTAP 如何使用雲端儲存設備、有助於瞭解儲存成本。
+
+
+
+== 總覽
+
+使用AWS和Azure Volume做為後端儲存設備。Cloud Volumes ONTAP它將這些磁碟區視為磁碟、並將其分組為一或多個集合體。Aggregate 可為一或多個磁碟區提供儲存設備。
+
+image:diagram_storage.png["本圖顯示由EBS磁碟組成的集合體、Cloud Volumes ONTAP 以及由主機使用的資料Volume。"]
+
+支援多種類型的雲端磁碟。您可以在建立磁碟區時選擇磁碟類型、並在部署Cloud Volumes ONTAP 時選擇預設的磁碟大小。
+
+
+TIP: 從AWS或Azure購買的儲存設備總容量為_rawcapity_。_ 可用容量 _ 較低、因為大約 12% 至 14% 的成本是保留供 Cloud Volumes ONTAP 作供參考之用的成本。例如、如果 Cloud Manager 建立 500 GB Aggregate 、可用容量為 442.94 GB 。
+
+
+
+== AWS 儲存設備
+
+在 AWS 中、 Aggregate 最多可包含 6 個大小相同的磁碟。磁碟大小上限為 16 TB 。
+
+基礎 EBS 磁碟類型可以是通用 SSD 、已配置的 IOPS SSD 、處理量最佳化 HDD 或冷 HDD 。您也可以將EBS磁碟與Amazon S3配對 link:concept_data_tiering.html["資料分層"]。
+
+EBS 磁碟類型的差異較高、如下所示：
+
+* _ 通用 SSD/disks 可在各種工作負載的成本與效能之間取得平衡。效能是以 IOPS 定義。
+* 配置的 IOPS SS__ 磁碟適用於需要最高效能且成本較高的關鍵應用程式。
+* _ 處理量最佳化 HDD_ 磁碟適用於經常存取的工作負載、需要以較低的價格提供快速且一致的處理量。
+* _Cold HDD_ 磁碟是用於備份、或是不常存取的資料、因為效能非常低。如同處理量最佳化的 HDD 磁碟、效能是以處理量來定義。
+
+
+
+NOTE: HA 組態和資料分層不支援冷 HDD 磁碟。
+
+如需這些磁碟使用案例的其他詳細資料、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+
+link:task_planning_your_config.html#sizing-your-system-in-aws["瞭解如何在 AWS 中為系統選擇磁碟類型和磁碟大小"]。
+
+https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.html["檢閱Cloud Volumes ONTAP 儲存限制以供參考"]。
+
+
+
+== Azure 儲存設備
+
+在 Azure 中、 Aggregate 最多可包含 12 個大小相同的磁碟。磁碟類型和最大磁碟大小取決於您使用的是單一節點系統或 HA 配對：
+
+單一節點系統:: 單一節點系統可使用三種 Azure 託管磁碟：
++
+--
+* _Premium SSD 託管磁碟 _ 以更高的成本、為 I/O 密集的工作負載提供高效能。
+* _ 標準 SSD 託管磁碟 _ 為需要低 IOPS 的工作負載提供一致的效能。
+* 如果您不需要高 IOPS 、而且想要降低成本、那麼 _ 標準 HDD 託管磁碟 _ 是個不錯的選擇。
++
+每種託管磁碟類型的磁碟大小上限為 32 TB 。
+
++
+您可以將託管磁碟與Azure Blob儲存設備配對 link:concept_data_tiering.html["資料分層"]。
+
+
+
+--
+HA 配對:: HA 配對使用 Premium 分頁區、磁碟大小上限為 8 TB 。
+
+
+如需這些磁碟使用案例的其他詳細資料、請參閱 https://azure.microsoft.com/documentation/articles/storage-introduction/["Microsoft Azure說明文件：Microsoft Azure Storage簡介"^]。
+
+link:task_planning_your_config.html#sizing-your-system-in-azure["瞭解如何在 Azure 中為您的系統選擇磁碟類型和磁碟大小"]。
+
+https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.html["檢閱Cloud Volumes ONTAP 儲存限制以供參考"]。

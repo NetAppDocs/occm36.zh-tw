@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task_editing_users.html 
+keywords: editing, users, user accounts, modify, modifying, report, notification, password, notification report 
+summary: 您可以啟用及停用通知報告、在Cloud Manager中修改使用者帳戶。 
+---
+= 編輯使用者帳戶
+:hardbreaks:
+:allow-uri-read: 
+:backend-html5-doctype-book: 
+:basebackend-html-doctype-book: 
+:doctype-book: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以啟用及停用通知報告、在Cloud Manager中修改使用者帳戶。
+
+密碼與使用者資訊必須在中變更 https://cloud.netapp.com["NetApp Cloud Central"^]。
+
+.步驟
+. 在Cloud Manager主控台的右上角、按一下使用者圖示、然後選取*檢視使用者*。
+. 選取列末端的功能表圖示、然後按一下*編輯使用者*。
++
+image:screenshot_edit_user.gif["螢幕擷取畫面：顯示編輯使用者帳戶的功能表。功能表位於使用者名稱旁。"]
+
+. 在「使用者設定」頁面中、修改使用者帳戶。
+
