@@ -22,4 +22,4 @@ Cloud Manager與NetApp Cloud Central的整合提供多項優點、包括簡化�
 
 以下影片概述NetApp Cloud Central：
 
-video::xKRsIfiy-54[youtube, width=848,height=480]
+video::xKRsIfiy-54[youtube,width=848,height=480]
