@@ -24,8 +24,8 @@ summary: 如果您想要在Cloud Volumes ONTAP 不同的雲端帳戶中部署此
 
 如果您想要在 Cloud Volumes ONTAP 不同的 AWS 帳戶中部署此功能、則必須提供這些帳戶所需的權限、然後將詳細資料新增至 Cloud Manager 。您提供權限的方式取決於您是要為 Cloud Manager 提供 AWS 金鑰、還是要為信任帳戶中的角色提供 ARN 。
 
-* <<Granting permissions when providing AWS keys>>
-* <<Granting permissions by assuming IAM roles in other accounts>>
+*  permissions when providing AWS keys
+*  permissions by assuming IAM roles in other accounts
 
 
 
@@ -48,7 +48,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-帳戶現在擁有必要的權限。 <<Adding AWS accounts to Cloud Manager,您現在可以將它新增至 Cloud Manager>>。
+帳戶現在擁有必要的權限。  AWS accounts to Cloud Manager,您現在可以將它新增至 Cloud Manager。
 
 
 
@@ -92,7 +92,7 @@ image:screenshot_iam_create_role.gif["顯示 AWS IAM Console 中「 Create role 
 
 
 
-帳戶現在擁有必要的權限。 <<Adding AWS accounts to Cloud Manager,您現在可以將它新增至 Cloud Manager>>。
+帳戶現在擁有必要的權限。  AWS accounts to Cloud Manager,您現在可以將它新增至 Cloud Manager。
 
 
 
@@ -109,7 +109,7 @@ image:screenshot_iam_create_role.gif["顯示 AWS IAM Console 中「 Create role 
 
 您現在可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至其他帳戶：
 
-image:screenshot_accounts_switch_aws.gif["在詳細資料 & 認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+image:screenshot_accounts_switch_aws.gif["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
 
 
 
@@ -117,8 +117,8 @@ image:screenshot_accounts_switch_aws.gif["在詳細資料 & 認證頁面中按�
 
 如果您想要在Cloud Volumes ONTAP 不同的Azure帳戶中部署功能、則必須提供這些帳戶所需的權限、然後將帳戶的詳細資料新增至Cloud Manager。
 
-* <<Granting Azure permissions using a service principal>>
-* <<Adding Azure accounts to Cloud Manager>>
+*  Azure permissions using a service principal
+*  Azure accounts to Cloud Manager
 
 
 
@@ -135,9 +135,9 @@ image:diagram_azure_authentication.png["概念性映像顯示 Cloud Manager 在�
 NOTE: 下列步驟使用新的Azure入口網站。如果您遇到任何問題、請使用Azure經典入口網站。
 
 .步驟
-. <<Creating a custom role with the required Cloud Manager permissions,以所需的Cloud Manager權限建立自訂角色>>。
-. <<Creating an Active Directory service principal,建立Active Directory服務主體>>。
-. <<Assigning the Cloud Manager Operator role to the service principal,將自訂的Cloud Manager營運者角色指派給服務主管>>。
+.  a custom role with the required Cloud Manager permissions,以所需的Cloud Manager權限建立自訂角色。
+.  an Active Directory service principal,建立Active Directory服務主體。
+.  the Cloud Manager Operator role to the service principal,將自訂的Cloud Manager營運者角色指派給服務主管。
 
 
 
@@ -276,7 +276,7 @@ Cloud Manager的服務主體現在擁有必要的Azure權限。
 
 您現在可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至其他帳戶：
 
-image:screenshot_accounts_switch_azure.gif["在詳細資料 & 認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
+image:screenshot_accounts_switch_azure.gif["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
 
 
 

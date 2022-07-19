@@ -32,11 +32,11 @@ link:media/c2s.pdf["AWS商業雲端服務環境快速入門指南"^]
 
 == Cloud Manager 3.6.6（2019年5月1日）
 
-* <<Support for 6 TB disks in AWS>>
-* <<Support for new disk sizes with single node systems in Azure>>
-* <<Support for Standard SSDs with single node systems in Azure>>
-* <<Automatic discovery of Kubernetes clusters created with the NetApp Kubernetes Service>>
-* <<Ability to configure an NTP server>>
+*  for 6 TB disks in AWS
+*  for new disk sizes with single node systems in Azure
+*  for Standard SSDs with single node systems in Azure
+*  discovery of Kubernetes clusters created with the NetApp Kubernetes Service
+*  to configure an NTP server
 
 
 
@@ -104,12 +104,12 @@ image:screenshot_configure_cifs.gif["顯示CIFS設定畫面的快照、其中包
 
 Cloud Manager 3.6.5包含下列增強功能。
 
-* <<Kubernetes enhancements>>
-* <<NetApp Support Site accounts are now managed at the system level>>
-* <<AWS transit gateways can enable access to floating IP addresses>>
-* <<Azure resource groups are now locked>>
-* <<NFS 4 and NFS 4.1 are now enabled by default>>
-* <<A new API enables you to delete ONTAP Snapshot copies>>
+*  enhancements
+*  Support Site accounts are now managed at the system level
+*  transit gateways can enable access to floating IP addresses
+*  resource groups are now locked
+*  4 and NFS 4.1 are now enabled by default
+*  new API enables you to delete ONTAP Snapshot copies
 
 
 
@@ -208,9 +208,9 @@ Cloud Manager已更新、可支援Cloud Volumes ONTAP 9.5 P1 for the Sfor the Sf
 
 Cloud Manager 3.6.4包含下列增強功能。
 
-* <<AWS-managed encryption with a key from another account>>
-* <<Recovery of failed disks>>
-* <<Azure storage accounts enabled for HTTPS when data tiering to Blob containers>>
+*  encryption with a key from another account
+*  of failed disks
+*  storage accounts enabled for HTTPS when data tiering to Blob containers
 
 
 
@@ -248,13 +248,13 @@ TIP: 您可以編輯使用者帳戶來啟用通知報告。
 
 Cloud Manager 3.6.3包含下列增強功能。
 
-* <<Support for Cloud Volumes ONTAP 9.5 GA>>
-* <<368 TB capacity limit for all Premium and BYOL configurations>>
-* <<Support for new AWS regions>>
-* <<Support for S3 Intelligent-Tiering>>
-* <<Ability to disable data tiering on the initial aggregate>>
-* <<Recommended EC2 instance type now t3.medium for Cloud Manager>>
-* <<Postponement of scheduled shutdowns during data transfers>>
+*  for Cloud Volumes ONTAP 9.5 GA
+*  TB capacity limit for all Premium and BYOL configurations
+*  for new AWS regions
+*  for S3 Intelligent-Tiering
+*  to disable data tiering on the initial aggregate
+*  EC2 instance type now t3.medium for Cloud Manager
+*  of scheduled shutdowns during data transfers
 
 
 
@@ -329,10 +329,10 @@ image:screenshot_s3_tiering_initial_aggr.gif["選擇基礎磁碟時顯示S3分�
 
 Cloud Manager 3.6.2包含新功能與增強功能。
 
-* <<AWS spread placement group for Cloud Volumes ONTAP HA in a single AZ>>
-* <<Ransomware protection>>
-* <<New data replication policies>>
-* <<Volume access control for Kubernetes>>
+*  spread placement group for Cloud Volumes ONTAP HA in a single AZ
+*  protection
+*  data replication policies
+*  access control for Kubernetes
 
 
 
@@ -405,10 +405,10 @@ Cloud Manager包含五項新的資料複寫原則、可用於資料保護。
 
 Cloud Manager 3.6.1包含新功能與增強功能。
 
-* <<Support for Cloud Volumes ONTAP 9.5 in Azure>>
-* <<Cloud Provider Accounts>>
-* <<Enhancements to the AWS Cost report>>
-* <<Support for new Azure regions>>
+*  for Cloud Volumes ONTAP 9.5 in Azure
+*  Provider Accounts
+*  to the AWS Cost report
+*  for new Azure regions
 
 
 
@@ -459,7 +459,7 @@ image:screenshot_cloud_provider_accounts.gif["顯示「Cloud Provider Account Se
 
 當您建立新的工作環境時、只需選擇要部署Cloud Volumes ONTAP 此系統的帳戶：
 
-image:screenshot_accounts_select_aws.gif["顯示「詳細資料 & 認證」頁面中「切換帳戶」選項的快照。"]
+image:screenshot_accounts_select_aws.gif["顯示「詳細資料  認證」頁面中「切換帳戶」選項的快照。"]
 
 當您升級至3.6.1時、Cloud Manager會根據您目前的組態、自動為您建立Cloud Provider帳戶。如果您有指令碼、就會有向下相容性、因此不會中斷。
 
