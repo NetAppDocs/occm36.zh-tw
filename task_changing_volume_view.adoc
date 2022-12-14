@@ -23,4 +23,5 @@ Cloud Manager提供兩種管理檢視：適用於跨混合雲管理儲存系統�
 . 在「檢視選擇」頁面上、選取*儲存系統檢視*、然後按一下*切換*。
 
 
+.結果
 Cloud Manager會切換至Volume View。

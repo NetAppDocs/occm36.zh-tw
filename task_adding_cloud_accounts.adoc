@@ -24,8 +24,8 @@ summary: 如果您想要在Cloud Volumes ONTAP 不同的雲端帳戶中部署此
 
 如果您想要在 Cloud Volumes ONTAP 不同的 AWS 帳戶中部署此功能、則必須提供這些帳戶所需的權限、然後將詳細資料新增至 Cloud Manager 。您提供權限的方式取決於您是要為 Cloud Manager 提供 AWS 金鑰、還是要為信任帳戶中的角色提供 ARN 。
 
-*  permissions when providing AWS keys
-*  permissions by assuming IAM roles in other accounts
+* <<提供AWS金鑰時授予權限>>
+* <<在其他帳戶中假設 IAM 角色來授予權限>>
 
 
 
@@ -48,7 +48,8 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-帳戶現在擁有必要的權限。  AWS accounts to Cloud Manager,您現在可以將它新增至 Cloud Manager。
+.結果
+帳戶現在擁有必要的權限。 <<將AWS帳戶新增至Cloud Manager,您現在可以將它新增至 Cloud Manager>>。
 
 
 
@@ -92,7 +93,8 @@ image:screenshot_iam_create_role.gif["顯示 AWS IAM Console 中「 Create role 
 
 
 
-帳戶現在擁有必要的權限。  AWS accounts to Cloud Manager,您現在可以將它新增至 Cloud Manager。
+.結果
+帳戶現在擁有必要的權限。 <<將AWS帳戶新增至Cloud Manager,您現在可以將它新增至 Cloud Manager>>。
 
 
 
@@ -107,6 +109,7 @@ image:screenshot_iam_create_role.gif["顯示 AWS IAM Console 中「 Create role 
 . 確認已符合原則需求、然後按一下「 * 建立帳戶 * 」。
 
 
+.結果
 您現在可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至其他帳戶：
 
 image:screenshot_accounts_switch_aws.gif["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
@@ -117,8 +120,8 @@ image:screenshot_accounts_switch_aws.gif["在詳細資料  認證頁面中按一
 
 如果您想要在Cloud Volumes ONTAP 不同的Azure帳戶中部署功能、則必須提供這些帳戶所需的權限、然後將帳戶的詳細資料新增至Cloud Manager。
 
-*  Azure permissions using a service principal
-*  Azure accounts to Cloud Manager
+* <<使用服務主體授予 Azure 權限>>
+* <<將Azure帳戶新增至Cloud Manager>>
 
 
 
@@ -127,6 +130,7 @@ image:screenshot_accounts_switch_aws.gif["在詳細資料  認證頁面中按一
 
 Cloud Manager 需要權限才能在 Azure 中執行動作。您可以在 Azure Active Directory 中建立及設定服務主體、並取得 Cloud Manager 所需的 Azure 認證資料、將必要的權限授予 Azure 帳戶。
 
+.關於這項工作
 下圖說明 Cloud Manager 如何取得在 Azure 中執行作業的權限。與一或多個 Azure 訂閱相關聯的服務主體物件、代表 Azure Active Directory 中的 Cloud Manager 、並指派給允許必要權限的自訂角色。
 
 image:diagram_azure_authentication.png["概念性映像顯示 Cloud Manager 在進行 API 呼叫之前、先從 Azure Active Directory 取得驗證與授權。在 Active Directory 中、 Cloud Manager 操作員角色定義權限。它與一或多個 Azure 訂閱以及代表 Cloud Manger 應用程式的服務主要物件相關聯。"]
@@ -135,9 +139,9 @@ image:diagram_azure_authentication.png["概念性映像顯示 Cloud Manager 在�
 NOTE: 下列步驟使用新的Azure入口網站。如果您遇到任何問題、請使用Azure經典入口網站。
 
 .步驟
-.  a custom role with the required Cloud Manager permissions,以所需的Cloud Manager權限建立自訂角色。
-.  an Active Directory service principal,建立Active Directory服務主體。
-.  the Cloud Manager Operator role to the service principal,將自訂的Cloud Manager營運者角色指派給服務主管。
+. <<以所需的Cloud Manager權限建立自訂角色,以所需的Cloud Manager權限建立自訂角色>>。
+. <<建立Active Directory服務主體,建立Active Directory服務主體>>。
+. <<將Cloud Manager營運者角色指派給服務主管,將自訂的Cloud Manager營運者角色指派給服務主管>>。
 
 
 
@@ -172,6 +176,7 @@ NOTE: 下列步驟使用新的Azure入口網站。如果您遇到任何問題、
 
 
 
+.結果
 現在您應該擁有名為OnCommand 「Cloud Manager操作者」的自訂角色。
 
 
@@ -180,6 +185,7 @@ NOTE: 下列步驟使用新的Azure入口網站。如果您遇到任何問題、
 
 您必須建立Active Directory服務主體、Cloud Manager才能與Azure Active Directory進行驗證。
 
+.開始之前
 您必須擁有Azure中適當的權限、才能建立Active Directory應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/["Microsoft Azure說明文件：使用入口網站建立可存取資源的Active Directory應用程式和服務主體"^]。
 
 .步驟
@@ -240,6 +246,7 @@ image:screenshot_azure_ad_id.gif["顯示Azure入口網站中的Active Directory�
 
 
 
+.結果
 您現在應該擁有Active Directory服務主體、而且應該已經複製應用程式ID、應用程式金鑰和Active Directory租戶ID。新增雲端供應商帳戶時、您必須在Cloud Manager中輸入此資訊。
 
 
@@ -248,6 +255,7 @@ image:screenshot_azure_ad_id.gif["顯示Azure入口網站中的Active Directory�
 
 您必須將服務主體繫結至一或多個Azure訂閱、並指派Cloud Manager營運者角色給它、以便Cloud Manager在Azure中擁有權限。
 
+.關於這項工作
 如果您想要從 Cloud Volumes ONTAP 多個 Azure 訂閱中部署支援功能、則必須將服務授權對象繫結至每個訂閱項目。Cloud Manager 可讓您選擇部署 Cloud Volumes ONTAP 時要使用的訂閱。
 
 .步驟
@@ -259,6 +267,7 @@ image:screenshot_azure_ad_id.gif["顯示Azure入口網站中的Active Directory�
 . 選取應用程式、按一下*選取*、然後按一下*確定*。
 
 
+.結果
 Cloud Manager的服務主體現在擁有必要的Azure權限。
 
 
@@ -274,6 +283,7 @@ Cloud Manager的服務主體現在擁有必要的Azure權限。
 . 確認已符合原則需求、然後按一下「 * 建立帳戶 * 」。
 
 
+.結果
 您現在可以在建立新的工作環境時、從「詳細資料與認證」頁面切換至其他帳戶：
 
 image:screenshot_accounts_switch_azure.gif["在詳細資料  認證頁面中按一下「切換帳戶」之後、顯示在雲端供應商帳戶之間選取的快照。"]
@@ -284,6 +294,7 @@ image:screenshot_accounts_switch_azure.gif["在詳細資料  認證頁面中按�
 
 Cloud Manager可讓您選擇要部署Cloud Volumes ONTAP 的Azure帳戶和訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["託管身分識別"^] 這些訂閱。
 
+.關於這項工作
 託管身分識別為初始身分識別 link:concept_accounts_and_permissions.html["雲端供應商帳戶"] 當您從NetApp Cloud Central部署Cloud Manager時、當您部署Cloud Manager時、Cloud Central建立OnCommand 了「不再只是做為運算子的解決方案」角色、並將其指派給Cloud Manager虛擬機器。
 
 .步驟
@@ -309,6 +320,7 @@ NOTE: 中提供的預設名稱為「Cloud Manager操作員」OnCommand https://m
 . 請重複這些步驟以取得額外訂閱內容。
 
 
+.結果
 當您建立新的工作環境時、現在應該能夠從多個 Azure 訂閱中選取託管身分識別設定檔。
 
 image:screenshot_accounts_switch_azure_subscription.gif["此螢幕快照顯示選取 Microsoft Azure Provider 帳戶時、可選擇多個 Azure 訂閱。"]

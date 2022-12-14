@@ -414,7 +414,6 @@
   <block id="28b05291adad7c873ac102ba84821b36" category="summary">歡迎使用Cloud Manager與Cloud Volumes ONTAP 解決方案的文件入口網站。</block>
   <block id="684c574c7f4f96c8a8169a7ac2bda18e" category="doc">Cloud Manager 與 Cloud Volumes ONTAP 技術文件</block>
   <block id="810113769d05692064780f2ea32d8f51" category="paragraph">利用NetApp Cloud Manager、您可以部署及管理NetApp解決方案、這是一套資料管理解決方案、可為雲端型工作負載提供保護、可見度及控制能力。OnCommand Cloud Volumes ONTAP</block>
-  <block id="1fde0727b387439572ade83eecff4f68" category="section-title">瞭解新功能</block>
   <block id="dcc605ce865f82b52df30a38895a0a28" category="inline-link-macro">Cloud Manager 的新功能</block>
   <block id="edb072b4e9ed25ee40010488a956934f" category="list-text"><block ref="edb072b4e9ed25ee40010488a956934f" category="inline-link-macro-rx"></block></block>
   <block id="dd47c5ffc608943bbe951c1bc249e4a3" category="inline-link">更新功能 Cloud Volumes ONTAP</block>
@@ -732,25 +731,20 @@
   <block id="665ca606ab3749b9f8d8f80733a0f879" category="summary">只要完成幾個快速步驟、即可在Cloud Volumes ONTAP AWS中開始使用這個功能。</block>
   <block id="f7bba7b010fcf309ed99329ba3de1d34" category="doc">開始使用Cloud Volumes ONTAP AWS的功能</block>
   <block id="25ede68d83d624c2021bf51edf7e10e0" category="paragraph">您可以從Cloud Volumes ONTAP NetApp Cloud Central開始使用AWS的功能。</block>
-  <block id="4e85b7aafac6d2da235acd904c8d01ca" category="section-title">設定您的網路</block>
   <block id="a681991b631a5acb29733a0b7730e52d" category="list-text">啟用從目標VPC的傳出網際網路存取、讓Cloud Manager和Cloud Volumes ONTAP 支援中心能夠連絡多個端點。</block>
   <block id="315474a8ef79b74899073fc979f12da4" category="inline-link-macro">Cloud Manager</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link-macro">Cloud Volumes ONTAP</block>
   <block id="d5332076efde404a7834150e066ff876" category="paragraph">這個步驟很重要、因為Cloud Manager Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下部署不穩定功能。如果您需要限制傳出連線、請參閱的端點清單 <block ref="258d0bfeed07e9f3f800353fd17d365f" category="inline-link-macro-rx"></block> 和 <block ref="82273ff2b165ec558cf6885df6c1a399" category="inline-link-macro-rx"></block>。</block>
   <block id="c1540e16429791c7515c0322aad07fcf" category="list-text">設定 S3 服務的 VPC 端點。</block>
   <block id="4274b83eccea8c2453ce00d6c7cde54e" category="paragraph">如果您想要將冷資料從 Cloud Volumes ONTAP 不願儲存到低成本物件儲存設備、則需要 VPC 端點。</block>
-  <block id="c5f19207f1daef0a6280f41fb14d4300" category="section-title">從Cloud Volumes ONTAP AWS Marketplace訂閱功能</block>
   <block id="c3db50cf0b4ffda7e5efdef5c6344f1a" category="inline-link">AWS Marketplace</block>
   <block id="78c36a87b6c0955bc0db78d44434a1a6" category="paragraph">訂閱來源<block ref="4a4be2c5a933797a9af2d5ea70e24e84" category="inline-link-rx"></block> 必須接受軟體條款。您只能從Marketplace訂閱。不支援從任何地方啟動Cloud Volumes ONTAP 、但Cloud Manager不支援。</block>
-  <block id="fcb13a1250c0b335c18418ea431681f2" category="section-title">提供必要的AWS權限</block>
   <block id="b99486f44ccd43f06815851fcef5a3bc" category="paragraph">當您從NetApp Cloud Central部署Cloud Manager時、您需要使用具有部署執行個體權限的AWS帳戶。</block>
   <block id="d44b2f7de3bd687b27cc738262b8bdf4" category="inline-link">適用於AWS的NetApp Cloud Central原則</block>
   <block id="f84694bd2204c771ef8e329f1ff15cd4" category="list-text">前往AWS IAM主控台、然後複製並貼上的內容來建立原則<block ref="467dbce35aa796ce72a03c7f71443016" category="inline-link-rx"></block>。</block>
   <block id="9680d60a8a185f9729b0b9df0caac646" category="list-text">將原則附加至IAM使用者。</block>
-  <block id="8a150b1735194cf0c703f98bd7de9682" category="section-title">從NetApp Cloud Central啟動Cloud Manager</block>
   <block id="8ee8d65142a1b5ef6e397b75587b4e61" category="inline-link">Cloud Central</block>
   <block id="5cad3979e55c4e95947e4d99523e9d84" category="paragraph">需要Cloud Manager軟體來部署和管理Cloud Volumes ONTAP 功能。從啟動Cloud Manager執行個體只需幾分鐘的時間<block ref="dd2262940c431e31dfcd64b1f8a27d38" category="inline-link-rx"></block>。</block>
-  <block id="161814f2b49992da7596b7b7fc9f77ae" category="section-title">使用 Cloud Manager 啟動 Cloud Volumes ONTAP</block>
   <block id="0c9b88a5cd39fe8dd0bb21b293c156ba" category="paragraph">Cloud Manager準備好之後、只要按一下「Create（建立）」、選取您要啟動的系統類型、然後完成精靈中的步驟。25分鐘後、您的第一個Cloud Volumes ONTAP 作業系統應該會啟動並開始運作。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相關連結</block>
   <block id="be64d9d97cf79e96941a831e40507ca5" category="inline-link-macro">評估</block>
@@ -2081,21 +2075,17 @@
   <block id="d4307938712bd86df3547821620fc208" category="paragraph">Cloud Manager可自動化部署<block ref="16b9ce8eda4ad967a3b6f9a1ad8a19fc" category="inline-link-rx"></block> 在Kubernetes叢集上、您可以使用Cloud Volumes ONTAP 效能不穩定的功能來儲存容器。入門包括幾個步驟。</block>
   <block id="234670c6936863be5df76e89d43f6839" category="inline-link">NetApp Kubernetes服務</block>
   <block id="a14d72ed5dcd2af3c8de2d38e1cce7f4" category="paragraph">如果您使用部署Kubernetes叢集<block ref="4039676aa53969da934d824de6b5ae64" category="inline-link-rx"></block>Cloud Manager可自動從您的NetApp Cloud Central帳戶探索叢集。如果是這種情況、請跳過前兩個步驟、從步驟3開始。</block>
-  <block id="66fd4a5928a9410b6d0484b91e95ec73" category="section-title">驗證網路連線能力</block>
   <block id="56309b04944f1b3ce20ec80954905f73" category="list-text">Cloud Manager和Kubernetes叢集之間、以及Kubernetes叢集到Cloud Volumes ONTAP 支援的系統之間、都必須有網路連線。</block>
   <block id="dcb9677328ce110eccce4861e794d6db" category="list-text">安裝Trident時、Cloud Manager需要連線到外傳網際網路、才能存取下列端點：</block>
   <block id="b5bf90cd586056ebba08ac4f2c2b2ca8" category="paragraph">\https://packages.cloud.google.com/yum \https://github.com/NetApp/trident/releases/download/</block>
   <block id="ca2f8a989dd9c49097cbd2a29eae79f4" category="paragraph">當您將工作環境連線至叢集時、Cloud Manager會在Kubernetes叢集上安裝Trident。</block>
-  <block id="70c2574420ea451459b76abad35d0a96" category="section-title">將Kubernetes組態檔案上傳至Cloud Manager</block>
   <block id="a7b0342841b82435892e3e9533f860b2" category="paragraph">對於每個Kubernetes叢集、Cloud Manager管理員必須上傳Yaml格式的組態檔（Kubeconfig）。上傳檔案之後、 Cloud Manager 會驗證與叢集的連線、並儲存 Kbeconfig 檔案的加密複本。</block>
   <block id="08cbb53df36a11f3c34ff8bbf0a53284" category="paragraph">按一下「* Kubernetes叢集&gt;探索&gt;上傳檔案*」、然後選取Kubeconfig檔案。</block>
   <block id="d9729feb74992cc3482b350163a1a010" category="inline-image-macro">SDF</block>
   <block id="57e7f662c9343fc2ce6ad807abc95878" category="paragraph"><block ref="57e7f662c9343fc2ce6ad807abc95878" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cb14b279d631c8e74799c921cd2c867a" category="section-title">將您的工作環境連接至Kubernetes叢集</block>
   <block id="6260b6f00c25b81f398ea0427309c5e4" category="paragraph">在工作環境中、按一下Kubernetes圖示、然後依照提示進行。您可以將不同的叢集連接至不同Cloud Volumes ONTAP 的支援系統、並將多個叢集連接至同Cloud Volumes ONTAP 一個支援系統。</block>
   <block id="5bbcb5b3d63f059941f597f11b771bf9" category="paragraph">您可以選擇將NetApp儲存類別設為Kubernetes叢集的預設儲存類別。當使用者建立持續磁碟區時、Kubernetes叢集Cloud Volumes ONTAP 預設會使用連線的支援功能作為後端儲存設備。</block>
   <block id="bf86d28ed7dd3b7013a1f3d1356334b5" category="paragraph"><block ref="bf86d28ed7dd3b7013a1f3d1356334b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3131838ab26e8cd5c452aaac1467f3b4" category="section-title">開始配置持續磁碟區</block>
   <block id="c74f1b2bbbb9d945984f18230b2295c2" category="paragraph">使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。Cloud Manager會建立兩個Kubernetes儲存類別、供您在配置持續磁碟區時使用：</block>
   <block id="ce451b45e03dc0c6a3da1d6d1d3c7cc8" category="list-text">* NetApp-file*：將持續磁碟區繫結至單節點Cloud Volumes ONTAP 的各種系統</block>
   <block id="f3c76f378195d9822cb21ab7c901657e" category="list-text">* NetApp-file-redund*：將持續Volume繫結至Cloud Volumes ONTAP VMware HA配對</block>
@@ -2229,7 +2219,6 @@
   <block id="ad0c6c926ca87a9fb70108c550fccf0f" category="paragraph">您可以Cloud Volumes ONTAP 從NetApp Cloud Central開始使用Azure中的功能。可在中部署Cloud Manager的個別指示 <block ref="da7f489839113ef2991f8fcc148cc547" category="inline-link-macro-rx"></block> 和 <block ref="1e349e6e8f72c1a1fe1f77ef3a422193" category="inline-link-macro-rx"></block>。</block>
   <block id="2166ecbf4859162bda081330f902ad53" category="paragraph">啟用從目標vnet的傳出網際網路存取、讓Cloud Manager和Cloud Volumes ONTAP 支援中心能夠連絡多個端點。</block>
   <block id="276a89edea106f206e74969bd2f976bb" category="paragraph">這個步驟很重要、因為Cloud Manager Cloud Volumes ONTAP 無法在沒有外傳網際網路存取的情況下部署不穩定功能。如果您需要限制傳出連線、請參閱的端點清單 <block ref="258d0bfeed07e9f3f800353fd17d365f" category="inline-link-macro-rx"></block> 和 <block ref="79a77371eaced9bdf59c560110560e49" category="inline-link-macro-rx"></block>。</block>
-  <block id="408bb88553711d2fd59ba113d098f8dd" category="section-title">提供必要的Azure權限</block>
   <block id="3f19c3e0aa6f5f945c948f6796417dfc" category="paragraph">從NetApp Cloud Central部署Cloud Manager時、您需要使用具備部署Cloud Manager虛擬機器權限的Azure帳戶。</block>
   <block id="a2b9345ed22c9ebdc477f8bac99f9f21" category="inline-link">適用於Azure的NetApp Cloud Central原則</block>
   <block id="c4a2429a67db9d91e1319fb991f0f462" category="list-text">下載<block ref="b53bbbe2ee3ee99c628f8f7ef4fae3a1" category="inline-link-rx"></block>。</block>
@@ -3194,4 +3183,24 @@
   <block id="75396e001838965f1f26327de3cf6d73" category="sidebar">支援的組態Cloud Volumes ONTAP</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="sidebar">權限</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">舊版</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="9b1146da7e8885b360bcba1784bf6d6c" category="inline-image-macro">第1名</block>
+  <block id="1323d5a65678d7001c29460122ccc820" category="section-title"><block ref="dfda45ebcbf64ca08d06a80353e9cf6f" category="inline-image-macro-rx" type="image"></block> 驗證網路連線能力</block>
+  <block id="6518735ebbb492ee2f8f5dfee52f3842" category="inline-image-macro">第2名</block>
+  <block id="94ed2c35dc25a4c6a2f0ff7f42fbbee8" category="section-title"><block ref="b496ee93dbdd8d3b796a1af3fe777064" category="inline-image-macro-rx" type="image"></block> 將Kubernetes組態檔案上傳至Cloud Manager</block>
+  <block id="a4c574c9c96d1cf8d9986e0d17dbe38b" category="inline-image-macro">第3名</block>
+  <block id="5e661dcc3402ab309aa8ed30318888c7" category="section-title"><block ref="f99fa24d03c6ef96c556af7cdf23810f" category="inline-image-macro-rx" type="image"></block> 將您的工作環境連接至Kubernetes叢集</block>
+  <block id="fa8bdf405671f556729a131b30bab6af" category="inline-image-macro">第4名</block>
+  <block id="a2a98c975ba9db610320c9f064248420" category="section-title"><block ref="d0f5cff2b8e0ecc91e360a74276cf2dd" category="inline-image-macro-rx" type="image"></block> 開始配置持續磁碟區</block>
+  <block id="492e5546e60705134bff8d7f80511a8d" category="section-title">瞭解最新資訊</block>
+  <block id="f744727b72c0e98e6caa53f045e617cd" category="section-title"><block ref="dfda45ebcbf64ca08d06a80353e9cf6f" category="inline-image-macro-rx" type="image"></block> 設定您的網路</block>
+  <block id="b5d4d688d49de4d2cad68f577d8bae2f" category="section-title"><block ref="b496ee93dbdd8d3b796a1af3fe777064" category="inline-image-macro-rx" type="image"></block> 從Cloud Volumes ONTAP AWS Marketplace訂閱功能</block>
+  <block id="a6b9de9663a4722a5c88412f9b6849d3" category="section-title"><block ref="f99fa24d03c6ef96c556af7cdf23810f" category="inline-image-macro-rx" type="image"></block> 提供必要的AWS權限</block>
+  <block id="d32db7792895fcf20faa24c02cd968ad" category="section-title"><block ref="d0f5cff2b8e0ecc91e360a74276cf2dd" category="inline-image-macro-rx" type="image"></block> 從NetApp Cloud Central啟動Cloud Manager</block>
+  <block id="6a604e45dcab200406f10c70d639255a" category="inline-image-macro">第5名</block>
+  <block id="67467aa7bd51d7bbe961339db94944ba" category="section-title"><block ref="c8b82927684b7195fa645497b5fcc719" category="inline-image-macro-rx" type="image"></block> 使用 Cloud Manager 啟動 Cloud Volumes ONTAP</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
+  <block id="832eb2addfeb7baf5b285a22aaeb4161" category="section-title"><block ref="b496ee93dbdd8d3b796a1af3fe777064" category="inline-image-macro-rx" type="image"></block> 提供必要的Azure權限</block>
+  <block id="55656479963c4d6faa53aa52af17bb58" category="section-title"><block ref="f99fa24d03c6ef96c556af7cdf23810f" category="inline-image-macro-rx" type="image"></block> 從NetApp Cloud Central啟動Cloud Manager</block>
+  <block id="fc6a1c4bfdea701c7028d4b2604689fb" category="section-title"><block ref="d0f5cff2b8e0ecc91e360a74276cf2dd" category="inline-image-macro-rx" type="image"></block> 使用 Cloud Manager 啟動 Cloud Volumes ONTAP</block>
 </blocks>

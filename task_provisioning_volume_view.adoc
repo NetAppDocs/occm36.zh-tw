@@ -109,6 +109,7 @@ image:screenshot_volume_view_ha_network.gif["螢幕擷取畫面：顯示兩Cloud
 
 
 
+.結果
 Cloud Manager會在現有系統或新系統上建立磁碟區。如果需要新的系統、建立磁碟區可能需要25分鐘左右的時間。
 
 

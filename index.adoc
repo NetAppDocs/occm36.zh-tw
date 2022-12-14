@@ -16,7 +16,7 @@ summary: 歡迎使用Cloud Manager與Cloud Volumes ONTAP 解決方案的文件�
 
 
 
-== 瞭解新功能
+== 瞭解最新資訊
 
 * link:reference_new_occm.html["Cloud Manager 的新功能"]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_95.html["更新功能 Cloud Volumes ONTAP"^]

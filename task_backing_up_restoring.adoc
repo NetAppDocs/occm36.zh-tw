@@ -44,4 +44,5 @@ image:screenshot_backup.gif["螢幕擷取畫面：顯示「工具」頁面中的
 . 選取備份。
 
 
+.結果
 Cloud Manager會從備份檔案還原資料庫。

@@ -41,6 +41,7 @@ image:screenshot_menu_license.gif["在工作環境中顯示功能表圖示的快
 . 按一下*上傳*、然後選取檔案。
 
 
+.結果
 Cloud Manager 會將新的授權檔案安裝在 Cloud Volumes ONTAP 更新的作業系統上。
 
 
@@ -66,6 +67,7 @@ Cloud Manager 會將新的授權檔案安裝在 Cloud Volumes ONTAP 更新的作
 . 選取執行個體或虛擬機器類型、選取核取方塊以確認您瞭解變更的影響、然後按一下*確定*。
 
 
+.結果
 以新組態重新開機。 Cloud Volumes ONTAP
 
 
@@ -74,6 +76,7 @@ Cloud Manager 會將新的授權檔案安裝在 Cloud Volumes ONTAP 更新的作
 
 啟動「隨用隨付 Cloud Volumes ONTAP 」功能的更新版本後、您可以隨時修改授權、以變更 Explore 、 Standard 和 Premium 組態。變更授權會增加或減少原始容量限制、並可讓您從不同的EC2執行個體類型或Azure虛擬機器類型中進行選擇。
 
+.關於這項工作
 請注意下列關於在隨用隨付授權之間變更的資訊：
 
 * 此作業會重新啟動 Cloud Volumes ONTAP 。
@@ -91,6 +94,7 @@ Cloud Manager 會將新的授權檔案安裝在 Cloud Volumes ONTAP 更新的作
 . 選取授權類型和執行個體類型或虛擬機器類型、選取核取方塊以確認您瞭解變更的影響、然後按一下*確定*。
 
 
+.結果
 使用新的授權、執行個體類型或虛擬機器類型重新開機、或同時使用兩者。Cloud Volumes ONTAP
 
 
@@ -147,6 +151,7 @@ IMPORTANT: 您不應透過 System Manager 或 CLI 變更管理帳戶的密碼。
 
 根據預設、 Cloud Volumes ONTAP 當您在 AWS 中選擇 c4.4xlarge 執行個體或 c4.8xlarge 執行個體時、將使用 9 、 000 MTU （也稱為巨型框架）。如果網路 MTU 更適合您的網路組態、您可以將其變更為 1 、 500 位元組。
 
+.關於這項工作
 網路最大傳輸單元（ MTU ）可提供特定組態所能達到的最高網路處理量。
 
 如果同一 VPC 中的用戶端與 Cloud Volumes ONTAP 該系統通訊、而部分或所有用戶端也支援 9 、 000 MTU 、則是理想的選擇。如果流量離開 VPC 、可能會發生封包分散、進而降低效能。
@@ -171,4 +176,5 @@ IMPORTANT: 您不應透過 System Manager 或 CLI 變更管理帳戶的密碼。
 . 修改所選路由表的清單、然後按一下「 * 儲存 * 」。
 
 
+.結果
 Cloud Manager 會傳送 AWS 要求來修改路由表。

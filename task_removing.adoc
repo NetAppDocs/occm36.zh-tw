@@ -16,6 +16,7 @@ summary: Cloud Manager管理員可以移除Cloud Volumes ONTAP 運作中的環�
 [role="lead"]
 Cloud Manager管理員可以移除Cloud Volumes ONTAP 運作中的環境、將其移至其他系統、或疑難排解探索問題。
 
+.關於這項工作
 移除 Cloud Volumes ONTAP 功能不全的工作環境、將其從 Cloud Manager 中移除。它不會刪除 Cloud Volumes ONTAP 此作業系統。您稍後可以重新探索工作環境。
 
 從 Cloud Manager 移除工作環境可讓您執行下列動作：
@@ -32,4 +33,5 @@ Cloud Manager管理員可以移除Cloud Volumes ONTAP 運作中的環境、將�
 . 在「 Review and Approve 」（檢閱並核准）頁面上、按一下「 * Go * 」。
 
 
+.結果
 Cloud Manager 會移除工作環境。使用者可隨時從「工作環境」頁面重新探索此工作環境。

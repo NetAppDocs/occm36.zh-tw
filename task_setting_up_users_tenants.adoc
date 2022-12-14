@@ -32,6 +32,7 @@ Cloud Manager可讓您將額外的Cloud Central使用者新增至Cloud Manager�
 . 輸入與使用者帳戶相關的電子郵件地址、選取角色、然後按一下*「Add*（新增*）」。
 
 
+.接下來呢？
 通知使用者現在可以登入Cloud Manager系統。
 
 
@@ -49,4 +50,5 @@ image:screenshot_tenants_icon.gif["螢幕擷取畫面：顯示Cloud Manager主�
 . 按一下「 * 儲存 * 」。
 
 
+.接下來呢？
 您現在可以切換至此新租戶、並將租戶管理員和工作環境管理員新增至此租戶。

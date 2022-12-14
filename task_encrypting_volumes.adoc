@@ -19,6 +19,7 @@ summary: NetApp Volume Encryption是一項軟體技術、可一次加密一個�
 [role="lead"]
 NetApp Volume Encryption（NVE）是一項軟體技術、可一次加密閒置一個磁碟區的資料。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。
 
+.關於這項工作
 目前、利用外部金鑰管理伺服器、支援NetApp Volume Encryption。Cloud Volumes ONTAP不支援Onboard Key Manager。
 
 您需要從ONTAP 功能完善的CLI設定NetApp Volume Encryption。然後、您可以使用CLI或System Manager在特定磁碟區上啟用加密功能。Cloud Manager不支援從使用者介面及API進行NetApp Volume Encryption。

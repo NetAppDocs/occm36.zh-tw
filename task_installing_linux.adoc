@@ -94,6 +94,7 @@ _ipaddress_可以是localhost、私有IP位址或公有IP位址、視Cloud Manag
 . 登入後、請輸入此Cloud Manager系統的名稱。
 
 
+.完成後
 設定AWS和Azure帳戶的權限、讓Cloud Manager能夠部署Cloud Volumes ONTAP 下列項目：
 
 * 如果您想要在Cloud Volumes ONTAP AWS中部署 link:task_adding_cloud_accounts.html["設定AWS帳戶、然後將其新增至Cloud Manager"]。

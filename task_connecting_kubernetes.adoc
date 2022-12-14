@@ -21,8 +21,9 @@ Cloud Manager可自動化部署 https://netapp-trident.readthedocs.io/en/stable-
 
 
 
-=== 驗證網路連線能力
+=== image:number1.png["第1名"] 驗證網路連線能力
 
+[role="quick-margin-list"]
 . Cloud Manager和Kubernetes叢集之間、以及Kubernetes叢集到Cloud Volumes ONTAP 支援的系統之間、都必須有網路連線。
 . 安裝Trident時、Cloud Manager需要連線到外傳網際網路、才能存取下列端點：
 +
@@ -35,7 +36,7 @@ Cloud Manager可自動化部署 https://netapp-trident.readthedocs.io/en/stable-
 
 
 
-=== 將Kubernetes組態檔案上傳至Cloud Manager
+=== image:number2.png["第2名"] 將Kubernetes組態檔案上傳至Cloud Manager
 
 [role="quick-margin-para"]
 對於每個Kubernetes叢集、Cloud Manager管理員必須上傳Yaml格式的組態檔（Kubeconfig）。上傳檔案之後、 Cloud Manager 會驗證與叢集的連線、並儲存 Kbeconfig 檔案的加密複本。
@@ -48,7 +49,7 @@ image:screenshot_kubernetes_setup.gif["SDF"]
 
 
 
-=== 將您的工作環境連接至Kubernetes叢集
+=== image:number3.png["第3名"] 將您的工作環境連接至Kubernetes叢集
 
 [role="quick-margin-para"]
 在工作環境中、按一下Kubernetes圖示、然後依照提示進行。您可以將不同的叢集連接至不同Cloud Volumes ONTAP 的支援系統、並將多個叢集連接至同Cloud Volumes ONTAP 一個支援系統。
@@ -61,11 +62,12 @@ image:screenshot_kubernetes_connect.gif["SDF"]
 
 
 
-=== 開始配置持續磁碟區
+=== image:number4.png["第4名"] 開始配置持續磁碟區
 
 [role="quick-margin-para"]
 使用原生 Kubernetes 介面和架構來要求及管理持續磁碟區。Cloud Manager會建立兩個Kubernetes儲存類別、供您在配置持續磁碟區時使用：
 
+[role="quick-margin-list"]
 * * NetApp-file*：將持續磁碟區繫結至單節點Cloud Volumes ONTAP 的各種系統
 * * NetApp-file-redund*：將持續Volume繫結至Cloud Volumes ONTAP VMware HA配對
 
@@ -73,6 +75,7 @@ image:screenshot_kubernetes_connect.gif["SDF"]
 [role="quick-margin-para"]
 Cloud Manager預設會將Trident設定為使用下列資源配置選項：
 
+[role="quick-margin-list"]
 * 精簡磁碟區
 * 預設的Snapshot原則
 * 可存取的Snapshot目錄

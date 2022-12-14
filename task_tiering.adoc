@@ -133,6 +133,7 @@ image:screenshot_replication_tiering.gif["快照顯示複寫磁碟區時的 S3 �
 
 啟用資料分層時Cloud Volumes ONTAP 、將非作用中資料分層至AWS中的S3 _Standard_儲存類別、或至Azure中的_hot_儲存層。部署Cloud Volumes ONTAP 完物件後、您可以變更30天內未存取的非使用中資料分層層級、藉此降低儲存成本。如果您確實存取資料、存取成本就會較高、因此在變更分層層級之前、您必須先將此納入考量。
 
+.關於這項工作
 分層層級是全系統層級、並非每個Volume。
 
 在AWS中、您可以變更分層層級、讓非作用中的資料在30天沒有活動之後移至下列其中一個儲存類別：
