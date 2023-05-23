@@ -36,10 +36,10 @@ image:screenshot_ntp_server_api.gif["顯示 NTP API 呼叫的 Swagger 介面快�
 
 
 
-| 選用：設定 AutoSupport 功能 | 可主動監控系統健全狀況、並依預設自動傳送訊息給 NetApp 技術支援部門。 AutoSupport如果Cloud Manager管理員在您啟動執行個體之前、已將Proxy伺服器新增至Cloud Manager、Cloud Volumes ONTAP 則會將此代理伺服器設定為使用AutoSupport 該代理伺服器來傳遞消息。您應該測試 AutoSupport 此功能、以確保它能傳送訊息。如需相關指示、請參閱系統管理員說明或 http://["《系統管理參考資料》（英文） ONTAP"^]。 
+| 選用：設定 AutoSupport 功能 | 可主動監控系統健全狀況、並依預設自動傳送訊息給 NetApp 技術支援部門。 AutoSupport如果Cloud Manager管理員在您啟動執行個體之前、已將Proxy伺服器新增至Cloud Manager、Cloud Volumes ONTAP 則會將此代理伺服器設定為使用AutoSupport 該代理伺服器來傳遞消息。您應該測試 AutoSupport 此功能、以確保它能傳送訊息。如需相關指示、請參閱系統管理員說明或 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["《系統管理參考資料》（英文） ONTAP"^]。 
 
 
-| 選用：設定 EMS | 事件管理系統（ EMS ）會收集 Cloud Volumes ONTAP 並顯示有關發生在故障系統上的事件資訊。若要接收事件通知、您可以針對特定事件嚴重性設定事件目的地（電子郵件地址、 SNMP 設陷主機或 syslog 伺服器）和事件路由。您可以使用 CLI 設定 EMS 。如需相關指示、請參閱 http://["《 9 EMS 組態快速指南》 ONTAP"^]。 
+| 選用：設定 EMS | 事件管理系統（ EMS ）會收集 Cloud Volumes ONTAP 並顯示有關發生在故障系統上的事件資訊。若要接收事件通知、您可以針對特定事件嚴重性設定事件目的地（電子郵件地址、 SNMP 設陷主機或 syslog 伺服器）和事件路由。您可以使用 CLI 設定 EMS 。如需相關指示、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-ems/home.html["《 9 EMS 組態快速指南》 ONTAP"^]。 
 
 
 | 選用：在多個 AWS 可用性區域中、為 HA 系統建立 SVM 管理網路介面（ LIF ）  a| 
@@ -52,5 +52,5 @@ network interface create -vserver svm_cloud -lif svm_mgmt -role data -data-proto
 ....
 
 
-| 選用：變更組態檔的備份位置 | 支援自動建立組態備份檔案、其中包含可設定選項的相關資訊、這些選項需要適當操作。 Cloud Volumes ONTAP根據預設Cloud Volumes ONTAP 、每八小時將檔案備份至Cloud Manager主機。如果您想要將備份傳送到其他位置、可以將位置變更為資料中心或 AWS 中的 FTP 或 HTTP 伺服器。例如 FAS 、您可能已經有一個適用於您的支援系統的備份位置。您可以使用 CLI 變更備份位置。請參閱 http://["《系統管理參考資料》（英文） ONTAP"^]。 
+| 選用：變更組態檔的備份位置 | 支援自動建立組態備份檔案、其中包含可設定選項的相關資訊、這些選項需要適當操作。 Cloud Volumes ONTAP根據預設Cloud Volumes ONTAP 、每八小時將檔案備份至Cloud Manager主機。如果您想要將備份傳送到其他位置、可以將位置變更為資料中心或 AWS 中的 FTP 或 HTTP 伺服器。例如 FAS 、您可能已經有一個適用於您的支援系統的備份位置。您可以使用 CLI 變更備份位置。請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html["《系統管理參考資料》（英文） ONTAP"^]。 
 |===

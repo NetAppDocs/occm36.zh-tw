@@ -35,15 +35,15 @@ summary: 如果您想要在Cloud Volumes ONTAP 不同的雲端帳戶中部署此
 如果您想要為 IAM 使用者提供 AWS 金鑰給 Cloud Manager 、則必須將必要的權限授予該使用者。Cloud Manager IAM 原則定義了允許 Cloud Manager 使用的 AWS 動作和資源。
 
 .步驟
-. 請從下載 Cloud Manager IAM 原則 https://["Cloud Manager 原則頁面"^]。
+. 請從下載 Cloud Manager IAM 原則 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager 原則頁面"^]。
 . 從 IAM 主控台複製並貼上 Cloud Manager IAM 原則中的文字、以建立您自己的原則。
 +
-https://["AWS 文件：建立 IAM 原則"^]
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS 文件：建立 IAM 原則"^]
 
 . 將原則附加至 IAM 角色或 IAM 使用者。
 +
-** https://["AWS 文件：建立 IAM 角色"^]
-** https://["AWS 文件：新增和移除 IAM 原則"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文件：建立 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文件：新增和移除 IAM 原則"^]
 
 
 
@@ -64,7 +64,7 @@ https://["AWS 文件：建立 IAM 原則"^]
 
 +
 ** 輸入Cloud Manager執行個體所在帳戶的ID。
-** 附加 Cloud Manager IAM 原則、可從取得 https://["Cloud Manager 原則頁面"^]。
+** 附加 Cloud Manager IAM 原則、可從取得 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager 原則頁面"^]。
 +
 image:screenshot_iam_create_role.gif["顯示 AWS IAM Console 中「 Create role 」（建立角色）頁面的快照。在選取信任實體類型下、會選取另一個 AWS 帳戶。"]
 
@@ -151,7 +151,7 @@ NOTE: 下列步驟使用新的Azure入口網站。如果您遇到任何問題、
 需要自訂角色、才能為Cloud Manager提供在Cloud Volumes ONTAP Azure中啟動及管理功能所需的權限。
 
 .步驟
-. 下載 https://["Cloud Manager Azure 原則"^]。
+. 下載 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager Azure 原則"^]。
 . 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
 +
 您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
@@ -186,7 +186,7 @@ NOTE: 下列步驟使用新的Azure入口網站。如果您遇到任何問題、
 您必須建立Active Directory服務主體、Cloud Manager才能與Azure Active Directory進行驗證。
 
 .開始之前
-您必須擁有Azure中適當的權限、才能建立Active Directory應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://["Microsoft Azure說明文件：使用入口網站建立可存取資源的Active Directory應用程式和服務主體"^]。
+您必須擁有Azure中適當的權限、才能建立Active Directory應用程式、並將應用程式指派給角色。如需詳細資訊、請參閱 https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/["Microsoft Azure說明文件：使用入口網站建立可存取資源的Active Directory應用程式和服務主體"^]。
 
 .步驟
 . 從 Azure 入口網站開啟 * Azure Active Directory * 服務。
@@ -197,7 +197,7 @@ image:screenshot_azure_ad.gif["顯示 Microsoft Azure 中的 Active Directory �
 . 建立服務主體：
 +
 .. 按一下「*新增應用程式登錄*」。
-.. 輸入應用程式名稱、保留*網路應用程式/ API*選取狀態、然後輸入任何URL、例如 http://[]
+.. 輸入應用程式名稱、保留*網路應用程式/ API*選取狀態、然後輸入任何URL、例如 http://url[]
 .. 按一下「 * 建立 * 」。
 
 
@@ -292,7 +292,7 @@ image:screenshot_accounts_switch_azure.gif["在詳細資料  認證頁面中按�
 
 == 將額外的 Azure 訂閱與託管身分識別建立關聯
 
-Cloud Manager可讓您選擇要部署Cloud Volumes ONTAP 的Azure帳戶和訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱 https://["託管身分識別"^] 這些訂閱。
+Cloud Manager可讓您選擇要部署Cloud Volumes ONTAP 的Azure帳戶和訂閱。除非您建立關聯、否則您無法為託管身分識別設定檔選取不同的 Azure 訂閱 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["託管身分識別"^] 這些訂閱。
 
 .關於這項工作
 託管身分識別為初始身分識別 link:concept_accounts_and_permissions.html["雲端供應商帳戶"] 當您從NetApp Cloud Central部署Cloud Manager時、當您部署Cloud Manager時、Cloud Central建立OnCommand 了「不再只是做為運算子的解決方案」角色、並將其指派給Cloud Manager虛擬機器。
@@ -307,7 +307,7 @@ Cloud Manager可讓您選擇要部署Cloud Volumes ONTAP 的Azure帳戶和訂閱
 *** 選擇* OnCommand 《Cloud Manager operator*》角色。
 +
 
-NOTE: 中提供的預設名稱為「Cloud Manager操作員」OnCommand https://["Cloud Manager 原則"]。如果您為角色選擇不同的名稱、請改為選取該名稱。
+NOTE: 中提供的預設名稱為「Cloud Manager操作員」OnCommand https://mysupport.netapp.com/info/web/ECMP11022837.html["Cloud Manager 原則"]。如果您為角色選擇不同的名稱、請改為選取該名稱。
 
 *** 指派 * 虛擬機器 * 的存取權。
 *** 選取建立Cloud Manager虛擬機器的訂閱。

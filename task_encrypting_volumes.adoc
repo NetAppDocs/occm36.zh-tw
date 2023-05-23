@@ -27,7 +27,7 @@ NetApp Volume Encryption（NVE）是一項軟體技術、可一次加密閒置�
 link:concept_security.html["深入瞭解支援的加密技術"]。
 
 .步驟
-. 檢閱中支援的關鍵管理程式清單 http://["NetApp 互通性對照表工具"^]。
+. 檢閱中支援的關鍵管理程式清單 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
 +
 
 TIP: 搜尋 * 關鍵經理 * 解決方案。
@@ -35,11 +35,11 @@ TIP: 搜尋 * 關鍵經理 * 解決方案。
 . link:task_connecting_to_otc.html["連線 Cloud Volumes ONTAP 至 CLI"^]。
 . 在Cloud Volumes ONTAP 整個系統上安裝NetApp Volume Encryption授權。
 +
-http://["《NetApp加密電源指南》（英文）9：安裝授權ONTAP"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-F5F371C0-7713-4A16-B5BF-A3514A97960D.html["《NetApp加密電源指南》（英文）9：安裝授權ONTAP"^]
 
 . 安裝 SSL 憑證並連線至外部金鑰管理伺服器。
 +
-http://["《 NetApp 加密電源指南》（英文） 9 ：設定外部金鑰管理 ONTAP"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-DD718B42-038D-4009-84FF-20BBD6530BC2.html["《 NetApp 加密電源指南》（英文） 9 ：設定外部金鑰管理 ONTAP"^]
 
 . 使用CLI或System Manager建立新的加密磁碟區、或轉換現有的未加密磁碟區。
 +
@@ -47,11 +47,11 @@ http://["《 NetApp 加密電源指南》（英文） 9 ：設定外部金鑰管
 +
 *** 對於新磁碟區、請使用* volume cre%*命令搭配-加密 參數。
 +
-http://["《NetApp加密電源指南》（英文）9：在新磁碟區上啟用加密功能ONTAP"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-A5D3FDEF-CA10-4A54-9E17-DB9E9954082E.html["《NetApp加密電源指南》（英文）9：在新磁碟區上啟用加密功能ONTAP"^]
 
 *** 對於現有磁碟區、請使用* Volume加密轉換start*命令。
 +
-http://["《NetApp加密電源指南》（英文）9：使用Volume Encryption Conversion start命令、在現有磁碟區上啟用加密功能ONTAP"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-1468CE48-A0D9-4D45-BF78-A11C26724051.html["《NetApp加密電源指南》（英文）9：使用Volume Encryption Conversion start命令、在現有磁碟區上啟用加密功能ONTAP"^]
 
 
 
@@ -59,11 +59,11 @@ http://["《NetApp加密電源指南》（英文）9：使用Volume Encryption C
 +
 *** 如需新磁碟區、請按一下「*儲存設備>磁碟區>建立>建立FlexVol Sfor *」、然後選取「*加密*」。
 +
-http://["使用System Manager進行的叢集管理功能：建立功能區ONTAP FlexVol"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-3FA865E2-AE14-40A9-BF76-A2D7EB44D387.html["使用System Manager進行的叢集管理功能：建立功能區ONTAP FlexVol"^]
 
 *** 對於現有磁碟區、請選取磁碟區、按一下*編輯*、然後選取*加密*。
 +
-http://["使用System Manager進行的叢集管理功能：編輯Volume內容ONTAP"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-906E88E4-8CE9-465F-8AC7-0C089080B2C5.html["使用System Manager進行的叢集管理功能：編輯Volume內容ONTAP"^]
 
 
 

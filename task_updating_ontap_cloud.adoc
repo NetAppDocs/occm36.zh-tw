@@ -77,7 +77,7 @@ HA配對的升級不中斷營運。不中斷升級可同時升級HA配對中的�
 
 您可以升級或降級至的版本會因系統上目前執行的版本不一而有所差異。ONTAP ONTAP
 
-若要瞭解版本需求、請參閱 http://["VMware Update文檔：叢集更新要求ONTAP"^]。
+若要瞭解版本需求、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-dot-upgrade/GUID-AC0EB781-583F-4C90-A4C4-BC7B14CEFD39.html["VMware Update文檔：叢集更新要求ONTAP"^]。
 
 
 
@@ -172,7 +172,7 @@ Cloud Manager 會啟動軟體升級。軟體更新完成後、即可在工作環
 
 NOTE: 預設的 Cloud Volumes ONTAP 「預先定義的功能」安全群組允許輸出 HTTP 和 FTP 連線。
 
-. 從取得軟體映像 https://["NetApp 支援網站"^]。
+. 從取得軟體映像 https://mysupport.netapp.com/products/p/cloud_ontap.html["NetApp 支援網站"^]。
 . 將軟體映像複製到 HTTP 或 FTP 伺服器上的目錄、以便從中提供檔案。
 . 在 Cloud Manager 的工作環境中、按一下功能表圖示、然後按一下 * 進階 > 更新 Cloud Volumes ONTAP * 。
 . 在更新軟體頁面上、選擇 * 從 URL* 選取可用的映像、輸入 URL 、然後按一下 * 變更映像 * 。

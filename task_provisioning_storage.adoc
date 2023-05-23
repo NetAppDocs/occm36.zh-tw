@@ -177,6 +177,6 @@ IMPORTANT: 對於部署在多個 AWS 可用性區域中的 HA 配對、您必須
 . 按一下「*建立*」、然後依照提示建立LUN。
 . 從主機連線至LUN。
 +
-如需相關指示、請參閱 http://["主機公用程式文件"^] 適用於您的作業系統。
+如需相關指示、請參閱 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343["主機公用程式文件"^] 適用於您的作業系統。
 
 

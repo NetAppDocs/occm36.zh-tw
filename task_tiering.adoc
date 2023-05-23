@@ -50,11 +50,11 @@ image:diagram_tiering.gif["顯示啟用分層的工作流程圖：選擇支援�
 
 == AWS中的分層資料需求
 
-您必須確保Cloud Volumes ONTAP 將Ss3連線至s3。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://["AWS 文件：建立閘道端點"^]。
+您必須確保Cloud Volumes ONTAP 將Ss3連線至s3。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 
 當您建立 VPC 端點時、請務必選取與 Cloud Volumes ONTAP 該實例相對應的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則 Cloud Volumes ONTAP 、無法連線至 S3 服務。
 
-如果您遇到任何問題、請參閱 https://["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]。
+如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]。
 
 
 
@@ -67,7 +67,7 @@ image:diagram_tiering.gif["顯示啟用分層的工作流程圖：選擇支援�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-這些權限包含在最新版本中 https://["Cloud Manager 原則"]。
+這些權限包含在最新版本中 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager 原則"]。
 
 
 

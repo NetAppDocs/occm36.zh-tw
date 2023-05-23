@@ -14,10 +14,10 @@ summary: 您可以從任何連線至Cloud Manager系統的網頁瀏覽器登入C
 
 
 [role="lead"]
-您可以從任何連線至Cloud Manager系統的網頁瀏覽器登入Cloud Manager。您應該使用登入 https://["NetApp Cloud Central"^] 使用者帳戶。
+您可以從任何連線至Cloud Manager系統的網頁瀏覽器登入Cloud Manager。您應該使用登入 https://cloud.netapp.com["NetApp Cloud Central"^] 使用者帳戶。
 
 .步驟
-. 開啟網頁瀏覽器並登入 https://["NetApp Cloud Central"^]。
+. 開啟網頁瀏覽器並登入 https://cloud.netapp.com["NetApp Cloud Central"^]。
 . 按一下*移至Cloud Data Services*、然後選取* Cloud Volumes ONTAP 《*》。
 . 針對您要存取的Cloud Manager系統、按一下*移至Cloud Manager*。
 +

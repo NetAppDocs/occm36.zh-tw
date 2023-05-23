@@ -32,9 +32,9 @@ Cloud Manager 可讓您檢視在 Cloud Volumes ONTAP AWS 中執行功能的相�
 "ce:GetTags"
 ----
 +
-這些行動包含在最新的中 https://["Cloud Manager 原則"^]。從 NetApp Cloud Central 部署的新系統會自動包含這些權限。
+這些行動包含在最新的中 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager 原則"^]。從 NetApp Cloud Central 部署的新系統會自動包含這些權限。
 
-.. https://["啟動 * 工作環境 Id* 標籤"^]。
+.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["啟動 * 工作環境 Id* 標籤"^]。
 +
 為了追蹤 AWS 成本、 Cloud Manager 會指派成本分配標籤給 Cloud Volumes ONTAP 各個執行個體。建立第一個工作環境之後、請啟動 * 工作環境 Id* 標籤。使用者定義的標記不會出現在 AWS 帳單報告上、除非您在帳單和成本管理主控台中啟動它們。
 

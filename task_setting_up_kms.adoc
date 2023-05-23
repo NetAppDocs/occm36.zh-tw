@@ -22,14 +22,14 @@ summary: 如果您想搭配 Cloud Volumes ONTAP 使用 Amazon 加密搭配使用
 CMK 可以是 AWS 託管的 CMK 、也可以是客戶託管的 CMK 。它可以與 Cloud Manager 及 Cloud Volumes ONTAP 其他 AWS 帳戶位於相同的 AWS 帳戶中、也可以位於不同的 AWS 帳戶中。
 
 +
-https://["AWS 文件：客戶主要金鑰（ CMK ）"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS 文件：客戶主要金鑰（ CMK ）"^]
 
 . 將 IAM 角色新增為 Cloud Manager 提供權限、做為 _key 使用者 _ 、以修改每個 CMK 的金鑰原則。
 +
 將 IAM 角色新增為主要使用者、可讓 Cloud Manager 有權搭配 Cloud Volumes ONTAP 使用 CMK 。
 
 +
-https://["AWS 文件：編輯金鑰"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文件：編輯金鑰"^]
 
 . 如果 CMK 位於不同的 AWS 帳戶、請完成下列步驟：
 +
@@ -96,7 +96,7 @@ image:screenshot_cmk_add_accounts_dialog.gif["此螢幕快照顯示 AWS KMS 主�
 }
 ----
 +
-如需此程序的其他詳細資料、請參閱 https://["AWS 文件：允許外部 AWS 帳戶存取 CMK"^]。
+如需此程序的其他詳細資料、請參閱 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html#key-policy-modifying-external-accounts["AWS 文件：允許外部 AWS 帳戶存取 CMK"^]。
 
 
 

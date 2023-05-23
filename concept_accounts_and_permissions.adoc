@@ -26,7 +26,7 @@ Cloud Manager可讓您選擇要在其中部署Cloud Volumes ONTAP 一套作業�
 
 === 初始AWS帳戶
 
-從NetApp Cloud Central部署Cloud Manager時、您需要使用具有啟動Cloud Manager執行個體權限的AWS帳戶。所需權限列於 https://["適用於AWS的NetApp Cloud Central原則"^]。
+從NetApp Cloud Central部署Cloud Manager時、您需要使用具有啟動Cloud Manager執行個體權限的AWS帳戶。所需權限列於 https://mysupport.netapp.com/cloudontap/iampolicies["適用於AWS的NetApp Cloud Central原則"^]。
 
 Cloud Central在AWS中啟動Cloud Manager執行個體時、會為執行個體建立IAM角色和執行個體設定檔。它也附加原則、讓Cloud Manager有權限在Cloud Volumes ONTAP 該AWS帳戶中部署及管理功能。 link:reference_permissions.html#what-cloud-manager-does-with-aws-permissions["檢閱 Cloud Manager 如何使用權限"]。
 
@@ -60,9 +60,9 @@ image:screenshot_accounts_switch_aws.gif["在詳細資料  認證頁面中按一
 
 === 初始Azure帳戶
 
-從NetApp Cloud Central部署Cloud Manager時、您需要使用具備部署Cloud Manager虛擬機器權限的Azure帳戶。所需權限列於 https://["適用於Azure的NetApp Cloud Central原則"^]。
+從NetApp Cloud Central部署Cloud Manager時、您需要使用具備部署Cloud Manager虛擬機器權限的Azure帳戶。所需權限列於 https://mysupport.netapp.com/cloudontap/iampolicies["適用於Azure的NetApp Cloud Central原則"^]。
 
-當Cloud Central在Azure中部署Cloud Manager虛擬機器時 https://["系統指派的託管身分識別"^] 在Cloud Manager虛擬機器上、建立自訂角色、並將其指派給虛擬機器。此角色可讓Cloud Manager在Cloud Volumes ONTAP 該Azure訂閱中部署及管理功能。 link:reference_permissions.html#what-cloud-manager-does-with-azure-permissions["檢閱 Cloud Manager 如何使用權限"]。
+當Cloud Central在Azure中部署Cloud Manager虛擬機器時 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^] 在Cloud Manager虛擬機器上、建立自訂角色、並將其指派給虛擬機器。此角色可讓Cloud Manager在Cloud Volumes ONTAP 該Azure訂閱中部署及管理功能。 link:reference_permissions.html#what-cloud-manager-does-with-azure-permissions["檢閱 Cloud Manager 如何使用權限"]。
 
 image:diagram_permissions_initial_azure.png["顯示 Cloud Central 在 Azure 帳戶和訂閱中部署 Cloud Manager 的概念性映像。系統指派的託管身分識別已啟用、並將自訂角色指派給 Cloud Manager 虛擬機器。"]
 

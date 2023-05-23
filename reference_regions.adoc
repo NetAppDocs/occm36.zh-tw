@@ -16,4 +16,4 @@ summary: Cloud Manager和Cloud Volumes ONTAP 功能不受AWS區域和Microsoft A
 [role="lead"]
 Cloud Manager和Cloud Volumes ONTAP 功能不受AWS區域和Microsoft Azure區域的支援。
 
-https://["按一下此處以檢視支援區域的清單"^]。
+https://cloud.netapp.com/cloud-volumes-global-regions["按一下此處以檢視支援區域的清單"^]。

@@ -18,4 +18,4 @@ summary: 已知問題可識別可能導致您無法成功使用本產品版本�
 
 此版本的 Cloud Manager 沒有已知問題。
 
-您可以在中找到 Cloud Volumes ONTAP 有關的已知問題 https://["發行說明 Cloud Volumes ONTAP"^] 以及 ONTAP 中一般的不適用軟體 https://["發行說明 ONTAP"^]。
+您可以在中找到 Cloud Volumes ONTAP 有關的已知問題 https://docs.netapp.com/us-en/cloud-volumes-ontap/["發行說明 Cloud Volumes ONTAP"^] 以及 ONTAP 中一般的不適用軟體 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。

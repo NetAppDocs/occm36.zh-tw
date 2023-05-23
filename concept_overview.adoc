@@ -27,7 +27,7 @@ Cloud Manager需要部署和管理Cloud Volumes ONTAP 功能、但也可以探�
 
 image:diagram_cloud_manager_overview.png["顯示Cloud Manager可跨混合雲管理的元件：Cloud Volumes ONTAP 將EBS儲存設備服務至EC2運算Cloud Volumes ONTAP 的一套系統、將Azure儲存設備服務至虛擬機器的一套系統、以及跨混合雲和多雲端環境的資料複寫。"]
 
-https://["深入瞭解 Cloud Manager"^]
+https://www.netapp.com/us/products/data-infrastructure-management/cloud-manager.aspx["深入瞭解 Cloud Manager"^]
 
 
 
@@ -47,6 +47,6 @@ https://["深入瞭解 Cloud Manager"^]
 
 NOTE: 除了NetApp Volume Encryption之外、其他功能的授權ONTAP 均隨附Cloud Volumes ONTAP 於此功能。
 
-https://["檢視支援 Cloud Volumes ONTAP 的支援的支援功能"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_supported_configs_95.html["檢視支援 Cloud Volumes ONTAP 的支援的支援功能"^]
 
-https://["深入瞭 Cloud Volumes ONTAP 解功能"^]
+https://www.netapp.com/us/cloud/ontap-cloud-native-product-details["深入瞭 Cloud Volumes ONTAP 解功能"^]

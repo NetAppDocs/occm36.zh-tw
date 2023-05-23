@@ -20,7 +20,7 @@ summary: 若要部署 BYOL 系統、必須將 NetApp Support Site 帳戶新增�
 
 video::V2fLTyztqYQ[youtube,width=848,height=480]
 .步驟
-. 如果您還沒有 NetApp 支援網站帳戶、 http://["註冊一項"^]。
+. 如果您還沒有 NetApp 支援網站帳戶、 http://now.netapp.com/newuser/["註冊一項"^]。
 . 在Cloud Manager主控台右上角、按一下工作下拉式清單、然後選取*帳戶設定*。
 . 單擊* Add New Account*（添加新帳戶）並選擇* NetApp Support Site"（* NetApp支持站點*）。
 . 指定帳戶名稱、然後輸入使用者名稱和密碼。

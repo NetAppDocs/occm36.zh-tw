@@ -16,11 +16,11 @@ summary: 您可以透過 Cloud Volumes ONTAP 各種資源（包括影片、論�
 [role="lead"]
 您可以透過 Cloud Volumes ONTAP 各種資源（包括影片、論壇和支援）、取得 Cloud Manager 和支援的相關協助及更多資訊。
 
-* https://["Cloud Manager 與 Cloud Volumes ONTAP 解決方案的影片"^]
+* https://www.youtube.com/playlist?list=PLdXI3bZJEw7lnoRo8FBKsX1zHbK8AQOoT["Cloud Manager 與 Cloud Volumes ONTAP 解決方案的影片"^]
 +
 觀看影片、瞭解如何在Cloud Volumes ONTAP AWS和Azure中部署和管理功能、以及如何在混合雲中複寫資料。
 
-* http://["Cloud Manager 原則"^]
+* http://mysupport.netapp.com/cloudontap/support/iampolicies["Cloud Manager 原則"^]
 +
 下載Json檔案、其中包含Cloud Manager在AWS和Azure中執行動作所需的權限。
 
@@ -30,41 +30,41 @@ summary: 您可以透過 Cloud Volumes ONTAP 各種資源（包括影片、論�
 
 * 關於本產品的訓練 Cloud Volumes ONTAP
 +
-** https://["功能基礎知識 Cloud Volumes ONTAP"^]
-** https://["適用於 Azure 的部署與管理 Cloud Volumes ONTAP"^]
+** https://learningcenter.netapp.com/LC?ObjectType=WBT&ObjectID=00368390["功能基礎知識 Cloud Volumes ONTAP"^]
+** https://learningcenter.netapp.com/LC?ObjectType=WBT&ObjectID=00369436["適用於 Azure 的部署與管理 Cloud Volumes ONTAP"^]
 
 
 * 技術報告
 +
-** https://["NetApp 技術報告 4383 ： Cloud Volumes ONTAP 運用應用程式工作負載、將 Amazon Web Services 中的功能特性化"^]
-** https://["NetApp 技術報告 4671 ： Cloud Volumes ONTAP 利用應用程式工作負載、將 Azure 中的效能特性化"^]
+** https://www.netapp.com/us/media/tr-4383.pdf["NetApp 技術報告 4383 ： Cloud Volumes ONTAP 運用應用程式工作負載、將 Amazon Web Services 中的功能特性化"^]
+** https://www.netapp.com/us/media/tr-4671.pdf["NetApp 技術報告 4671 ： Cloud Volumes ONTAP 利用應用程式工作負載、將 Azure 中的效能特性化"^]
 
 
-* https://["《 SVM 災難恢復準備快速指南》（英文） Cloud Volumes ONTAP"^]
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["《 SVM 災難恢復準備快速指南》（英文） Cloud Volumes ONTAP"^]
 +
 說明如何快速設定目的地 SVM 、以準備災難恢復。
 
-* https://["《 SVM Disaster Recovery Express 指南》（英文） Cloud Volumes ONTAP"^]
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["《 SVM Disaster Recovery Express 指南》（英文） Cloud Volumes ONTAP"^]
 +
 說明如何在災難發生後快速啟動目的地 SVM 、然後重新啟動來源 SVM 。
 
-* http://["供應說明文件中心 ONTAP"^]
+* http://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]
 +
 存取 ONTAP 產品文件以供參考、這有助於您使用 Cloud Volumes ONTAP NetApp 。
 
-* https://["NetApp Cloud Volumes ONTAP 支援"^]
+* https://mysupport.netapp.com/cloudontap["NetApp Cloud Volumes ONTAP 支援"^]
 +
 存取支援資源以取得協助、並使用 Cloud Volumes ONTAP VMware 解決有關問題。
 
-* https://["NetApp 社群：雲端資料服務"^]
+* https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS["NetApp 社群：雲端資料服務"^]
 +
 與同儕交流、提出問題、交換想法、尋找資源、並分享最佳實務做法。
 
-* http://["NetApp Cloud Central"^]
+* http://cloud.netapp.com/["NetApp Cloud Central"^]
 +
 尋找適用於雲端的其他 NetApp 產品與解決方案相關資訊。
 
-* http://["NetApp 產品文件"^]
+* http://docs.netapp.com["NetApp 產品文件"^]
 +
 請在 NetApp 產品文件中搜尋說明、資源和答案。
 

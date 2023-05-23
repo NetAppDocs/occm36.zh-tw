@@ -42,25 +42,25 @@ AWS 必須符合下列要求。
 HA 中介器的傳出網際網路存取:: HA 中介執行個體必須具有 AWS EC2 服務的傳出連線、才能協助進行儲存容錯移轉。若要提供連線、您可以新增公用 IP 位址、指定 Proxy 伺服器或使用手動選項。
 +
 --
-手動選項可以是從目標子網路到 AWS EC2 服務的 NAT 閘道或介面 VPC 端點。如需 VPC 端點的詳細資訊、請參閱 http://["AWS 文件：介面 VPC 端點（ AWS Private Link ）"^]。
+手動選項可以是從目標子網路到 AWS EC2 服務的 NAT 閘道或介面 VPC 端點。如需 VPC 端點的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS 文件：介面 VPC 端點（ AWS Private Link ）"^]。
 
 --
 安全性群組:: 您不需要建立安全性群組、因為 Cloud Manager 會為您建立安全性群組。如果您需要使用自己的、請參閱 link:reference_security_groups.html["安全性群組規則"]。
-從 Cloud Volumes ONTAP 支援資料分層的功能、從功能鏈接至 AWS S3:: 如果您想要將 EBS 當作效能層、將 AWS S3 當作容量層、您必須確保 Cloud Volumes ONTAP 將該連接到 S3 。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://["AWS 文件：建立閘道端點"^]。
+從 Cloud Volumes ONTAP 支援資料分層的功能、從功能鏈接至 AWS S3:: 如果您想要將 EBS 當作效能層、將 AWS S3 當作容量層、您必須確保 Cloud Volumes ONTAP 將該連接到 S3 。提供此連線的最佳方法是建立 VPC 端點至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 +
 --
 當您建立 VPC 端點時、請務必選取與 Cloud Volumes ONTAP 該實例相對應的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則 Cloud Volumes ONTAP 、無法連線至 S3 服務。
 
-如果您遇到任何問題、請參閱 https://["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]
+如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]
 
 --
-連線 ONTAP 至其他網路中的不二系統:: 若要在 Cloud Volumes ONTAP AWS 系統和 ONTAP 其他網路中的更新系統之間複寫資料、您必須在 AWS VPC 和其他網路之間建立 VPN 連線、例如 Azure vnet 或公司網路。如需相關指示、請參閱 https://["AWS 文件：設定 AWS VPN 連線"^]。
+連線 ONTAP 至其他網路中的不二系統:: 若要在 Cloud Volumes ONTAP AWS 系統和 ONTAP 其他網路中的更新系統之間複寫資料、您必須在 AWS VPC 和其他網路之間建立 VPN 連線、例如 Azure vnet 或公司網路。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS 文件：設定 AWS VPN 連線"^]。
 適用於 CIFS 的 DNS 和 Active Directory:: 如果您想要配置 CIFS 儲存設備、則必須在 AWS 中設定 DNS 和 Active Directory 、或將內部部署設定延伸至 AWS 。
 +
 --
 DNS 伺服器必須為 Active Directory 環境提供名稱解析服務。您可以將 DHCP 選項集設定為使用預設 EC2 DNS 伺服器、此伺服器不得是 Active Directory 環境所使用的 DNS 伺服器。
 
-如需相關指示、請參閱 https://["AWS文件：AWS Cloud上的Active Directory網域服務快速入門參考部署"^]。
+如需相關指示、請參閱 https://s3.amazonaws.com/quickstart-reference/microsoft/activedirectory/latest/doc/Microsoft_Active_Directory_Quick_Start.pdf["AWS文件：AWS Cloud上的Active Directory網域服務快速入門參考部署"^]。
 
 --
 
@@ -102,7 +102,7 @@ NOTE: Cloud Manager 會自動建立靜態 IP 位址、以供 iSCSI 存取及從 
 
 例如、您可能有兩個子網路與不同的路由表相關聯。如果您選取路由表 A 而非路由表 B 、則與路由表 A 相關聯的子網路中的用戶端可以存取 HA 配對、但與路由表 B 相關的子網路中的用戶端則無法存取。
 
-如需路由表的詳細資訊、請參閱 http://["AWS 文件：路由表"^]。
+如需路由表的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。
 
 --
 連線至 NetApp 管理工具:: 若要將 NetApp 管理工具搭配多個 AZs 中的 HA 組態使用、您有兩種連線選項：
@@ -142,7 +142,7 @@ image:diagram_ha_networking.png["概念性影像、顯示 Cloud Volumes ONTAP �
 
 NOTE: 您可以使用HTTP Proxy來提供網際網路連線功能、而非使用NAT裝置。
 
-如需此案例的詳細資訊、請參閱 http://["AWS文件：情境2：VPC搭配公有和私有子網路（NAT）"^]。
+如需此案例的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html["AWS文件：情境2：VPC搭配公有和私有子網路（NAT）"^]。
 
 下圖顯示在公有子網路中執行的Cloud Manager、以及在私有子網路中執行的單一節點系統：
 
@@ -159,7 +159,7 @@ NOTE: 您也可以在此組態中使用Proxy伺服器來允許網際網路存取
 
 如果您想要在FAS 資料中心的支援系統和Cloud Volumes ONTAP AWS的支援系統之間複寫資料、您應該使用VPN連線、以確保連結安全無虞。
 
-如需此案例的詳細資訊、請參閱 http://["AWS文件：案例4：VPC僅含私有子網路和AWS託管VPN存取"^]。
+如需此案例的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario4.html["AWS文件：案例4：VPC僅含私有子網路和AWS託管VPN存取"^]。
 
 下圖顯示在資料中心執行的Cloud Manager、以及在私有子網路中執行的單一節點系統：
 

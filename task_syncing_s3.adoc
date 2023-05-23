@@ -14,7 +14,7 @@ summary: 您可以ONTAP 將工作環境與NetApp Cloud Sync 支援整合、將�
 
 
 [role="lead"]
-您可以ONTAP 將工作環境與整合、將資料從功能區同步到AWS S3儲存區 https://["NetApp Cloud Sync"^]。然後您可以將同步資料當作次要複本、或是使用AWS服務（例如EMR和Redshift）來處理資料。
+您可以ONTAP 將工作環境與整合、將資料從功能區同步到AWS S3儲存區 https://www.netapp.com/us/cloud/data-sync-saas-product-details["NetApp Cloud Sync"^]。然後您可以將同步資料當作次要複本、或是使用AWS服務（例如EMR和Redshift）來處理資料。
 
 
 
