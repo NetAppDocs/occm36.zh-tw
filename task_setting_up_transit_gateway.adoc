@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["此圖表顯示一部 VPC 中的 HA 組態、
 下列步驟說明如何設定類似的組態。
 
 .步驟
-. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["建立傳輸閘道、並將 VPC 附加至閘道"^]。
+. https://["建立傳輸閘道、並將 VPC 附加至閘道"^]。
 . 指定 HA 配對的浮動 IP 位址、在傳輸閘道的路由表中建立路由。
 +
 您可以在 Cloud Manager 的「工作環境資訊」頁面找到浮動 IP 位址。範例如下：

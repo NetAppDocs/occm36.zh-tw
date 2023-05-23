@@ -14,7 +14,7 @@ summary: 最好使用NetApp Cloud Central在AWS中啟動Cloud Manager、但您�
 
 
 [role="lead"]
-最好使用AWS啟動Cloud Manager https://cloud.netapp.com["NetApp Cloud Central"^]、但您可以視需要從AWS Marketplace啟動。
+最好使用AWS啟動Cloud Manager https://["NetApp Cloud Central"^]、但您可以視需要從AWS Marketplace啟動。
 
 
 TIP: 如果您從AWS Marketplace啟動Cloud Manager、Cloud Manager仍會與NetApp Cloud Central整合。 link:concept_cloud_central.html["深入瞭解整合"]。
@@ -27,13 +27,13 @@ TIP: 如果您從AWS Marketplace啟動Cloud Manager、Cloud Manager仍會與NetA
 +
 .. 請從下列位置下載 Cloud Manager IAM 原則：
 +
-https://mysupport.netapp.com/cloudontap/iampolicies["NetApp OnCommand 解決方案Cloud Manager：AWS和Azure原則"^]
+https://["NetApp OnCommand 解決方案Cloud Manager：AWS和Azure原則"^]
 
 .. 從 IAM 主控台複製並貼上 Cloud Manager IAM 原則中的文字、以建立您自己的原則。
 .. 建立角色類型為 Amazon EC2 的 IAM 角色、並將您在上一步建立的原則附加至角色。
 
 
-. 前往 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace 上的 Cloud Manager 頁面"^]。
+. 前往 https://["AWS Marketplace 上的 Cloud Manager 頁面"^]。
 . 按一下 * 繼續 * 。
 . 在「自訂啟動」索引標籤上、針對您所在的地區按一下*「以EC2主控台啟動*」、然後選擇：
 +

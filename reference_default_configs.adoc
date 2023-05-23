@@ -79,7 +79,7 @@ NOTE: 由於 Cloud Volumes ONTAP EC2 需求、 LIF 容錯移轉功能預設為�
 
 
 * 使用HTTPS將組態備份傳送至Cloud Manager。Cloud Volumes ONTAP
-* 登入Cloud Manager後、即可從存取備份 https://ipaddress/occm/offboxconfig/[]
+* 登入Cloud Manager後、即可從存取備份 https://[]
 * Cloud Manager 設定的磁碟區屬性與其他管理工具（例如 System Manager 或 CLI ）有所不同。
 +
 下表列出 Cloud Manager 設定的 Volume 屬性與預設值不同：

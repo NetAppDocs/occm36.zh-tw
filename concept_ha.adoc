@@ -84,7 +84,7 @@ HA 組態可維持資料的高可用度、如下所示：
 對於 iSCSI 、 Cloud Volumes ONTAP Reality 使用多重路徑 I/O （ MPIO ）和非對稱邏輯單元存取（ ALUA ）來管理主動最佳化和非最佳化路徑之間的路徑容錯移轉。
 
 
-NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
+NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
 
 
 
@@ -107,7 +107,7 @@ image:diagram_takeover_giveback.png["概念性影像、顯示 Cloud Volumes ONTA
 在單一可用度區域（ AZ ）中部署 HA 組態、可確保執行 Cloud Volumes ONTAP 此節點的執行個體故障時、資料的高可用度。所有資料均可從 VPC 外部原生存取。
 
 
-NOTE: Cloud Manager 會建立一個 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分散配置群組"^] 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。
+NOTE: Cloud Manager 會建立一個 https://["AWS 分散配置群組"^] 然後啟動該放置群組中的兩個 HA 節點。放置群組可將執行個體分散到不同的基礎硬體、藉此降低同時發生故障的風險。此功能可從運算角度而非磁碟故障角度改善備援。
 
 
 
@@ -126,7 +126,7 @@ image:diagram_single_az.png["概念性影像、顯示 ONTAP 單一可用度區�
 對於 iSCSI 、 Cloud Volumes ONTAP Reality 使用多重路徑 I/O （ MPIO ）和非對稱邏輯單元存取（ ALUA ）來管理主動最佳化和非最佳化路徑之間的路徑容錯移轉。
 
 
-NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
+NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
 
 對於 NAS 組態、如果發生故障、資料 IP 位址可以在 HA 節點之間移轉。如此可確保用戶端存取儲存設備。
 

@@ -23,7 +23,7 @@ summary: 您可能需要在Cloud Volumes ONTAP 儲存需求改變時、變更不
 如果Cloud Manager無法從NetApp取得BYOL授權檔案、您可以自行取得該檔案、然後手動將檔案上傳至Cloud Manager、以便將授權安裝在Cloud Volumes ONTAP 更新版上。
 
 .步驟
-. 前往 https://register.netapp.com/register/getlicensefile["NetApp 授權檔案產生器"^] 並使用您的 NetApp 支援網站認證登入。
+. 前往 https://["NetApp 授權檔案產生器"^] 並使用您的 NetApp 支援網站認證登入。
 . 輸入您的密碼、選擇您的產品（* Cloud Volumes ONTAP 適用於AWS*的NetApp SIRYBYOL、* Cloud Volumes ONTAP 適用於Azure *的NetApp SBYOL或* Cloud Volumes ONTAP 適用於AWS的NetApp SIRYBYOL HA *）、輸入序號、確認您已閱讀並接受隱私權政策、然後按一下*提交*。
 +
 * 範例 *

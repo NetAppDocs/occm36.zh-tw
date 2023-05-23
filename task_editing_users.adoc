@@ -20,7 +20,7 @@ summary: 您可以啟用及停用通知報告、在Cloud Manager中修改使用�
 您可以啟用及停用通知報告、在Cloud Manager中修改使用者帳戶。
 
 .關於這項工作
-密碼與使用者資訊必須在中變更 https://cloud.netapp.com["NetApp Cloud Central"^]。
+密碼與使用者資訊必須在中變更 https://["NetApp Cloud Central"^]。
 
 .步驟
 . 在Cloud Manager主控台的右上角、按一下使用者圖示、然後選取*檢視使用者*。

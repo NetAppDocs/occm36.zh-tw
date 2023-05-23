@@ -14,7 +14,7 @@ summary: 最好使用NetApp Cloud Central在Azure中部署Cloud Manager、但您
 
 
 [role="lead"]
-最好使用在Azure中部署Cloud Manager https://cloud.netapp.com["NetApp Cloud Central"^]但您可以視需要從Azure Marketplace部署。
+最好使用在Azure中部署Cloud Manager https://["NetApp Cloud Central"^]但您可以視需要從Azure Marketplace部署。
 
 可在中部署Cloud Manager的個別指示 link:task_installing_azure_gov.html["Azure美國政府區域"] 和 link:task_installing_azure_germany.html["Azure德國地區"]。
 
@@ -28,7 +28,7 @@ TIP: 如果您從Azure Marketplace部署Cloud Manager、Cloud Manager仍會與Ne
 您必須安裝並設定Cloud Manager、才能在Cloud Volumes ONTAP Azure中使用Cloud Manager來啟動功能。
 
 .步驟
-. https://azure.microsoft.com/en-us/marketplace/partners/netapp/netapp-oncommand-cloud-manager/["前往 Azure Marketplace for Cloud Manager 頁面"^]。
+. https://["前往 Azure Marketplace for Cloud Manager 頁面"^]。
 . 按一下「 * 立即取得 * 」、然後按一下「 * 繼續 * 」。
 . 從 Azure 入口網站按一下 * 「 Create 」（建立） * 、然後依照步驟設定虛擬機器。
 +
@@ -43,7 +43,7 @@ link:reference_security_groups_azure.html["深入瞭解Cloud Manager的安全群
 
 ** 在「*管理*」下、選取「*開啟*」來啟用*系統指派的Cloud Manager託管身分識別*。
 +
-這項設定非常重要、因為託管身分識別可讓Cloud Manager虛擬機器在Azure Active Directory中識別自己、而無需提供任何認證資料。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["深入瞭解 Azure 資源的託管身分識別"^]。
+這項設定非常重要、因為託管身分識別可讓Cloud Manager虛擬機器在Azure Active Directory中識別自己、而無需提供任何認證資料。 https://["深入瞭解 Azure 資源的託管身分識別"^]。
 
 
 
@@ -53,7 +53,7 @@ Azure 以指定的設定部署虛擬機器。虛擬機器和Cloud Manager軟體�
 
 . 從連線至Cloud Manager虛擬機器的主機開啟網頁瀏覽器、然後輸入下列URL：
 +
-http://_ipaddress_:80[]
+http://[]
 
 +
 登入時、Cloud Manager會自動將您的使用者帳戶新增為此系統的管理員。
@@ -68,12 +68,12 @@ http://_ipaddress_:80[]
 
 == 將Azure權限授予Cloud Manager
 
-當您在Azure中部署Cloud Manager時、您應該已啟用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系統指派的託管身分識別"^]。您現在必須建立自訂角色、然後將角色指派給Cloud Manager虛擬機器以進行一或多項訂閱、以授予必要的Azure權限。
+當您在Azure中部署Cloud Manager時、您應該已啟用 https://["系統指派的託管身分識別"^]。您現在必須建立自訂角色、然後將角色指派給Cloud Manager虛擬機器以進行一或多項訂閱、以授予必要的Azure權限。
 
 .步驟
 . 使用 Cloud Manager 原則建立自訂角色：
 +
-.. 下載 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager Azure 原則"^]。
+.. 下載 https://["Cloud Manager Azure 原則"^]。
 .. 將 Azure 訂閱 ID 新增至可指派的範圍、以修改 Json 檔案。
 +
 您應該為使用者建立 Cloud Volumes ONTAP 的各個 Azure 訂閱新增 ID 。
@@ -105,7 +105,7 @@ http://_ipaddress_:80[]
 *** 選擇* OnCommand 《Cloud Manager operator*》角色。
 +
 
-NOTE: 中提供的預設名稱為「Cloud Manager操作員」OnCommand https://mysupport.netapp.com/info/web/ECMP11022837.html["Cloud Manager 原則"]。如果您為角色選擇不同的名稱、請改為選取該名稱。
+NOTE: 中提供的預設名稱為「Cloud Manager操作員」OnCommand https://["Cloud Manager 原則"]。如果您為角色選擇不同的名稱、請改為選取該名稱。
 
 *** 指派 * 虛擬機器 * 的存取權。
 *** 選取建立Cloud Manager虛擬機器的訂閱。

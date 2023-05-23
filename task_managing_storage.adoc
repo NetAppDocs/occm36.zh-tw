@@ -48,7 +48,7 @@ Cloud Manager 可讓您管理磁碟區、集合體及 CIFS 伺服器。它也會
 
 此程序會建立 FlexClone Volume 。FlexClone Volume 是可寫入的時間點複本、空間效率極高、因為它會使用少量的空間作為中繼資料、然後只會在資料變更或新增時耗用額外空間。
 
-若要深入瞭解 FlexClone Volume 、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["《 9 邏輯儲存管理指南》 ONTAP"^]。
+若要深入瞭解 FlexClone Volume 、請參閱 http://["《 9 邏輯儲存管理指南》 ONTAP"^]。
 
 
 
@@ -280,7 +280,7 @@ image:screenshot_aggr_volumes.gif["螢幕擷取畫面：在 Aggregate 資訊對�
 
 . 設定磁碟區以進行資料存取。
 +
-如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
+如需設定目的地 Volume 以進行資料存取的相關資訊、請參閱 http://["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
 
 . 刪除原始 Volume 。
 +
@@ -321,6 +321,6 @@ image:screenshot_aggr_capacity.gif["螢幕擷取畫面：顯示 Aggregate 資訊
 . 使用 System Manager 或 CLI 將磁碟區移至 Aggregate 。
 . 在大多數情況下、您可以使用 System Manager 來移動磁碟區。
 +
-如需相關指示、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
+如需相關指示、請參閱 http://["《》《 9 Volume Move Express Guide 》（英文） ONTAP"^]。
 
 

@@ -48,11 +48,11 @@ EBS 磁碟類型的差異較高、如下所示：
 
 NOTE: HA 組態和資料分層不支援冷 HDD 磁碟。
 
-如需這些磁碟使用案例的其他詳細資料、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+如需這些磁碟使用案例的其他詳細資料、請參閱 http://["AWS 文件： EBS Volume 類型"^]。
 
 link:task_planning_your_config.html#sizing-your-system-in-aws["瞭解如何在 AWS 中為系統選擇磁碟類型和磁碟大小"]。
 
-https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.html["檢閱Cloud Volumes ONTAP 儲存限制以供參考"]。
+https://["檢閱Cloud Volumes ONTAP 儲存限制以供參考"]。
 
 
 
@@ -78,8 +78,8 @@ https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.ht
 HA 配對:: HA 配對使用 Premium 分頁區、磁碟大小上限為 8 TB 。
 
 
-如需這些磁碟使用案例的其他詳細資料、請參閱 https://azure.microsoft.com/documentation/articles/storage-introduction/["Microsoft Azure說明文件：Microsoft Azure Storage簡介"^]。
+如需這些磁碟使用案例的其他詳細資料、請參閱 https://["Microsoft Azure說明文件：Microsoft Azure Storage簡介"^]。
 
 link:task_planning_your_config.html#sizing-your-system-in-azure["瞭解如何在 Azure 中為您的系統選擇磁碟類型和磁碟大小"]。
 
-https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.html["檢閱Cloud Volumes ONTAP 儲存限制以供參考"]。
+https://["檢閱Cloud Volumes ONTAP 儲存限制以供參考"]。

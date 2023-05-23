@@ -78,7 +78,7 @@ summary: 在開始之前、您可能想要更深入瞭解部署OnCommand 選用�
 
 link:task_getting_started_aws.html["AWS快速入門"] 和 link:task_getting_started_azure.html["Azure入門"] 提供快速Cloud Volumes ONTAP 執行和升級的指示。如需其他說明、請參閱下列內容：
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_supported_configs_95.html["支援的組態Cloud Volumes ONTAP"^]
+* https://["支援的組態Cloud Volumes ONTAP"^]
 * link:task_planning_your_config.html["規劃組態"]
 * link:task_deploying_otc_aws.html["在 Cloud Volumes ONTAP AWS 中啟動"]
 * link:task_deploying_otc_azure.html["在 Cloud Volumes ONTAP Azure 中啟動"]

@@ -36,7 +36,7 @@ Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果�
 
 
 --
-Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisorhttps://access.redhat.com/certified-hypervisors["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
+Hypervisor:: 通過認證可執行 CentOS 或 Red Hat Enterprise Linux 的裸機或託管 Hypervisorhttps://["Red Hat 解決方案：哪些 Hypervisor 已通過認證、可執行 Red Hat Enterprise Linux ？"^]
 CPU:: 2.27 GHz或更高、含兩個核心
 RAM:: 4 GB
 可用磁碟空間:: 50 GB

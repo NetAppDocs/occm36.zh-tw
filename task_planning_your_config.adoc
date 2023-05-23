@@ -22,9 +22,9 @@ summary: 部署 Cloud Volumes ONTAP 時、您可以選擇符合工作負載需�
 
 AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL）Cloud Volumes ONTAP 。若為隨用隨付、您可以從三種授權中選擇： Explore 、 Standard 或 Premium 。每個授權都提供不同的容量和運算選項。
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_supported_configs_95.html["支援的組態Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_supported_configs_94.html["支援的組態Cloud Volumes ONTAP 、適用於支援的支援"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_supported_configs_93.html["支援的支援組態ONTAP 、適用於支援的Cloud 9.3"^]
+* https://["支援的組態Cloud Volumes ONTAP"^]
+* https://["支援的組態Cloud Volumes ONTAP 、適用於支援的支援"^]
+* https://["支援的支援組態ONTAP 、適用於支援的Cloud 9.3"^]
 
 
 
@@ -33,9 +33,9 @@ AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL�
 
 一個不含資源的系統的原始容量上限 Cloud Volumes ONTAP 與授權有關。其他限制會影響集合體和磁碟區的大小。在規劃組態時、您應該注意這些限制。
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_storage_limits_95.html["儲存限制Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_storage_limits_94.html["儲存限制Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_storage_limits_93.html["適用於NetApp的儲存限制ONTAP 9.3"^]
+* https://["儲存限制Cloud Volumes ONTAP"^]
+* https://["儲存限制Cloud Volumes ONTAP"^]
+* https://["適用於NetApp的儲存限制ONTAP 9.3"^]
 
 
 
@@ -51,13 +51,13 @@ AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL�
 * 如果有多位使用者同時寫入系統、請選擇有足夠 CPU 來管理要求的執行個體類型。
 * 如果您的應用程式大多讀取、請選擇具有足夠 RAM 的系統。
 +
-https://aws.amazon.com/ec2/instance-types/["AWS 文件： Amazon EC2 執行個體類型"^]
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 文件： Amazon EBS 最佳化執行個體"^]
+https://["AWS 文件： Amazon EC2 執行個體類型"^]
+https://["AWS 文件： Amazon EBS 最佳化執行個體"^]
 
 
 
 --
-EBS 磁碟類型:: 通用 SSD 是 Cloud Volumes ONTAP 最常見的磁碟類型。若要檢視 EBS 磁碟的使用案例、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+EBS 磁碟類型:: 通用 SSD 是 Cloud Volumes ONTAP 最常見的磁碟類型。若要檢視 EBS 磁碟的使用案例、請參閱 http://["AWS 文件： EBS Volume 類型"^]。
 EBS 磁碟大小:: 啟動 Cloud Volumes ONTAP 一套系統時、您需要選擇初始磁碟大小。之後、您就可以了 link:concept_storage_management.html["讓 Cloud Manager 為您管理系統容量"]但如果您想要的話 link:task_provisioning_storage.html#creating-aggregates["自行建置集合體"]請注意下列事項：
 +
 --
@@ -66,7 +66,7 @@ EBS 磁碟大小:: 啟動 Cloud Volumes ONTAP 一套系統時、您需要選擇�
 * 最後、您應該選擇能提供所需 _ 持續效能 _ 的磁碟大小。
 * 即使您選擇較大的磁碟（例如六個 4 TB 磁碟）、也可能無法取得所有 IOPS 、因為 EC2 執行個體可以達到其頻寬限制。
 +
-如需 EBS 磁碟效能的詳細資訊、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+如需 EBS 磁碟效能的詳細資訊、請參閱 http://["AWS 文件： EBS Volume 類型"^]。
 
 
 
@@ -82,11 +82,11 @@ video::GELcXmOuYPw[youtube,width=848,height=480]
 
 調整 Cloud Volumes ONTAP 您的支援規模、有助於滿足效能與容量的需求。在選擇 VM 類型、磁碟類型和磁碟大小時、您應該注意幾個關鍵點：
 
-虛擬機器類型:: 請查看中支援的虛擬機器類型 http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["發行說明 Cloud Volumes ONTAP"^] 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。
+虛擬機器類型:: 請查看中支援的虛擬機器類型 http://["發行說明 Cloud Volumes ONTAP"^] 然後檢閱每種受支援 VM 類型的詳細資料。請注意、每種 VM 類型都支援特定數量的資料磁碟。
 +
 --
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure 文件：通用虛擬機器大小"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Azure 文件：記憶體最佳化的虛擬機器大小"^]
+* https://["Azure 文件：通用虛擬機器大小"^]
+* https://["Azure 文件：記憶體最佳化的虛擬機器大小"^]
 
 
 --
@@ -99,7 +99,7 @@ HA 系統使用優質網頁。同時、單一節點系統可使用兩種 Azure �
 * _ 標準 SSD 託管磁碟 _ 為需要低 IOPS 的工作負載提供一致的效能。
 * 如果您不需要高 IOPS 、而且想要降低成本、那麼 _ 標準 HDD 託管磁碟 _ 是個不錯的選擇。
 +
-如需這些磁碟使用案例的其他詳細資料、請參閱 https://azure.microsoft.com/documentation/articles/storage-introduction/["Microsoft Azure說明文件：Microsoft Azure Storage簡介"^]。
+如需這些磁碟使用案例的其他詳細資料、請參閱 https://["Microsoft Azure說明文件：Microsoft Azure Storage簡介"^]。
 
 
 
@@ -118,8 +118,8 @@ Azure Premium Storage 的效能與磁碟大小有關。較大的磁碟可提供�
 
 請參閱 Azure 、瞭解每個磁碟大小的 IOPS 與處理量：
 
-* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure ：託管磁碟定價"^]
-* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure ：網頁 Blobs 定價"^]
+* https://["Microsoft Azure ：託管磁碟定價"^]
+* https://["Microsoft Azure ：網頁 Blobs 定價"^]
 
 
 --

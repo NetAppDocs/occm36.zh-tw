@@ -37,7 +37,7 @@ image:screenshot_warning.gif["螢幕擷取畫面：顯示 Cloud Volumes ONTAP �
 如果您未及時續約授權、Cloud Volumes ONTAP 則無法自行關閉。如果您重新啟動、它會再次自動關機。
 
 
-NOTE: 透過電子郵件、 SNMP traphost 或使用 EMS （事件管理系統）事件通知的 syslog 伺服器、也可以通知您。 Cloud Volumes ONTAP如需相關指示、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-ems/home.html["《 9 EMS 組態快速指南》 ONTAP"^]。
+NOTE: 透過電子郵件、 SNMP traphost 或使用 EMS （事件管理系統）事件通知的 syslog 伺服器、也可以通知您。 Cloud Volumes ONTAP如需相關指示、請參閱 http://["《 9 EMS 組態快速指南》 ONTAP"^]。
 
 [discrete]
 === 授權續約

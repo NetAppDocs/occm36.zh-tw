@@ -15,9 +15,9 @@ summary: Cloud Manager 可在 Kubernetes 叢集上自動化 NetApp Trident 的�
 
 
 [role="lead"]
-Cloud Manager可自動化部署 https://netapp-trident.readthedocs.io/en/stable-v18.10/introduction.html["NetApp Trident"^] 在Kubernetes叢集上、您可以使用Cloud Volumes ONTAP 效能不穩定的功能來儲存容器。入門包括幾個步驟。
+Cloud Manager可自動化部署 https://["NetApp Trident"^] 在Kubernetes叢集上、您可以使用Cloud Volumes ONTAP 效能不穩定的功能來儲存容器。入門包括幾個步驟。
 
-如果您使用部署Kubernetes叢集 https://cloud.netapp.com/kubernetes-service["NetApp Kubernetes服務"^]Cloud Manager可自動從您的NetApp Cloud Central帳戶探索叢集。如果是這種情況、請跳過前兩個步驟、從步驟3開始。
+如果您使用部署Kubernetes叢集 https://["NetApp Kubernetes服務"^]Cloud Manager可自動從您的NetApp Cloud Central帳戶探索叢集。如果是這種情況、請跳過前兩個步驟、從步驟3開始。
 
 
 
@@ -82,7 +82,7 @@ Cloud Manager預設會將Trident設定為使用下列資源配置選項：
 
 
 [role="quick-margin-para"]
-https://netapp-trident.readthedocs.io/["深入瞭解如何使用 Kubernetes 的 Trident 來配置第一個 Volume"^]
+https://["深入瞭解如何使用 Kubernetes 的 Trident 來配置第一個 Volume"^]
 
 .什麼是Trident磁碟區？
 ****

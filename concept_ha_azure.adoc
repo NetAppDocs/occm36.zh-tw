@@ -59,7 +59,7 @@ HA 組態可維持資料的高可用度、如下所示：
 對於 iSCSI 、 Cloud Volumes ONTAP Reality 使用多重路徑 I/O （ MPIO ）和非對稱邏輯單元存取（ ALUA ）來管理主動最佳化和非最佳化路徑之間的路徑容錯移轉。
 
 
-NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
+NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http://["NetApp 互通性對照表工具"^] 以及主機作業系統的主機公用程式安裝與設定指南。
 
 
 
@@ -78,7 +78,7 @@ NOTE: 如需哪些特定主機組態支援 ALUA 的相關資訊、請參閱 http
 * 不支援 NFSv4 。支援 NFSv3 。
 * 某些地區不支援 HA 配對。
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["請參閱支援的 Azure 地區清單"^]。
+https://["請參閱支援的 Azure 地區清單"^]。
 
 
 

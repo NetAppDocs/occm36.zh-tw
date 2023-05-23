@@ -57,7 +57,7 @@ summary: 您可以使用Cloud Manager建立NFS磁碟區、在AWS儲存設備上�
 ** 由於效能極低、因此冷HDD磁碟只能用於備份、或是不常存取的資料。如同處理量最佳化的 HDD 磁碟、效能是以處理量來定義。
 
 
-如需詳細資料、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+如需詳細資料、請參閱 http://["AWS 文件： EBS Volume 類型"^]。
 
 |===
 +
@@ -86,7 +86,7 @@ image:screenshot_volume_view_create.gif["螢幕擷取畫面：顯示已填妥「
 ** 處理量最佳化的HDD磁碟適用於需要快速且一致處理量的經常存取工作負載。
 
 
-如需詳細資料、請參閱 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文件： EBS Volume 類型"^]。
+如需詳細資料、請參閱 http://["AWS 文件： EBS Volume 類型"^]。
 
 
 
@@ -99,7 +99,7 @@ image:screenshot_volume_view_create.gif["螢幕擷取畫面：顯示已填妥「
 | 浮動IP | 該地區所有 VPC 的 IP 位址必須位於 CIDR 區塊之外。 
 
 
-| 路由表 | 如果您有多個路由表、請務必選取正確的路由表。否則、部分用戶端可能無法存取HA配對。如需詳細資料、請參閱  http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 文件：路由表"^]。 
+| 路由表 | 如果您有多個路由表、請務必選取正確的路由表。否則、部分用戶端可能無法存取HA配對。如需詳細資料、請參閱  http://["AWS 文件：路由表"^]。 
 |===
 +
 下圖顯示「節點與資訊管理器」頁面。每個執行個體都位於個別的「可用度區域」中。

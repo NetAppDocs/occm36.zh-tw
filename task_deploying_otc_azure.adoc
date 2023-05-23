@@ -50,7 +50,7 @@ Cloud Manager Cloud Volumes ONTAP 在 Azure 中建立一套功能完善的系統
 | 資源群組名稱 | 如果取消選中*使用預設*、您可以輸入新資源群組的名稱。如果您要使用現有的資源群組、則必須使用API。 
 
 
-| 標記 | 標記是 Azure 資源的中繼資料。Cloud Manager會將標記新增Cloud Volumes ONTAP 至整個系統、以及與系統相關聯的每個Azure資源。建立工作環境時、您最多可以從使用者介面新增四個標記、然後在建立之後新增更多標記。請注意、在建立工作環境時、 API 不會限制您使用四個標記。如需標記的相關資訊、請參閱 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 說明文件：使用標籤來組織 Azure 資源"^]。 
+| 標記 | 標記是 Azure 資源的中繼資料。Cloud Manager會將標記新增Cloud Volumes ONTAP 至整個系統、以及與系統相關聯的每個Azure資源。建立工作環境時、您最多可以從使用者介面新增四個標記、然後在建立之後新增更多標記。請注意、在建立工作環境時、 API 不會限制您使用四個標記。如需標記的相關資訊、請參閱 https://["Microsoft Azure 說明文件：使用標籤來組織 Azure 資源"^]。 
 
 
 | 認證資料 | 這些是 Cloud Volumes ONTAP 適用於整個叢集管理帳戶的認證資料。您可以使用這些認證資料 Cloud Volumes ONTAP 、透過 OnCommand 「系統管理程式」或其 CLI 連線至功能驗證。 
@@ -177,7 +177,7 @@ Cloud Manager 部署 Cloud Volumes ONTAP 了這個功能。您可以追蹤時間
 
 如果您在部署 Cloud Volumes ONTAP 此系統時遇到任何問題、請檢閱故障訊息。您也可以選取工作環境、然後按一下 * 重新建立環境 * 。
 
-如需其他協助、請前往 https://mysupport.netapp.com/cloudontap["NetApp Cloud Volumes ONTAP 支援"^]。
+如需其他協助、請前往 https://["NetApp Cloud Volumes ONTAP 支援"^]。
 
 .完成後
 * 如果您已配置 CIFS 共用區、請授予使用者或群組檔案和資料夾的權限、並確認這些使用者可以存取共用區並建立檔案。

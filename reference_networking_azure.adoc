@@ -39,7 +39,7 @@ summary: 您必須設定Azure網路、Cloud Volumes ONTAP 才能使作業系統�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-這些權限包含在最新版本中 https://mysupport.netapp.com/cloudontap/iampolicies["Cloud Manager 原則"]。
+這些權限包含在最新版本中 https://["Cloud Manager 原則"]。
 
 如需設定資料分層的詳細資訊、請參閱 link:task_tiering.html["將冷資料分層至低成本物件儲存設備"]。
 
@@ -47,7 +47,7 @@ summary: 您必須設定Azure網路、Cloud Volumes ONTAP 才能使作業系統�
 連線 ONTAP 至其他網路中的不二系統:: 若要在 Cloud Volumes ONTAP Azure 中的某個更新系統與 ONTAP 其他網路中的其他更新系統之間複寫資料、您必須在 Azure vnet 與其他網路（例如 AWS VPC 或公司網路）之間建立 VPN 連線。
 +
 --
-如需相關指示、請參閱 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal["Microsoft Azure 文件：在 Azure 入口網站中建立站台對站台連線"^]。
+如需相關指示、請參閱 https://["Microsoft Azure 文件：在 Azure 入口網站中建立站台對站台連線"^]。
 
 --
 

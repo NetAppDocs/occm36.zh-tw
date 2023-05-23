@@ -14,7 +14,7 @@ summary: NetApp Cloud Central提供集中位置、可存取及管理NetApp雲端
 
 
 [role="lead"]
-https://cloud.netapp.com["NetApp Cloud Central"^] 提供集中位置以存取及管理NetApp雲端資料服務。這些服務可讓您在雲端上執行關鍵應用程式、建立自動化的DR站台、備份SaaS資料、以及在多個雲端之間有效地移轉和控制資料。
+https://["NetApp Cloud Central"^] 提供集中位置以存取及管理NetApp雲端資料服務。這些服務可讓您在雲端上執行關鍵應用程式、建立自動化的DR站台、備份SaaS資料、以及在多個雲端之間有效地移轉和控制資料。
 
 Cloud Manager與NetApp Cloud Central的整合提供多項優點、包括簡化部署體驗、單一位置即可檢視及管理多個Cloud Manager系統、以及集中式使用者驗證。
 

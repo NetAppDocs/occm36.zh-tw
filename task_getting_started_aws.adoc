@@ -37,7 +37,7 @@ summary: 只要完成幾個快速步驟、即可在Cloud Volumes ONTAP AWS中開
 === image:number2.png["第2名"] 從Cloud Volumes ONTAP AWS Marketplace訂閱功能
 
 [role="quick-margin-para"]
-訂閱來源 https://aws.amazon.com/marketplace/search/results?page=1&searchTerms=netapp+cloud+volumes+ontap["AWS Marketplace"^] 必須接受軟體條款。您只能從Marketplace訂閱。不支援從任何地方啟動Cloud Volumes ONTAP 、但Cloud Manager不支援。
+訂閱來源 https://["AWS Marketplace"^] 必須接受軟體條款。您只能從Marketplace訂閱。不支援從任何地方啟動Cloud Volumes ONTAP 、但Cloud Manager不支援。
 
 
 
@@ -47,7 +47,7 @@ summary: 只要完成幾個快速步驟、即可在Cloud Volumes ONTAP AWS中開
 當您從NetApp Cloud Central部署Cloud Manager時、您需要使用具有部署執行個體權限的AWS帳戶。
 
 [role="quick-margin-list"]
-. 前往AWS IAM主控台、然後複製並貼上的內容來建立原則 https://mysupport.netapp.com/cloudontap/iampolicies["適用於AWS的NetApp Cloud Central原則"^]。
+. 前往AWS IAM主控台、然後複製並貼上的內容來建立原則 https://["適用於AWS的NetApp Cloud Central原則"^]。
 . 將原則附加至IAM使用者。
 
 
@@ -56,7 +56,7 @@ summary: 只要完成幾個快速步驟、即可在Cloud Volumes ONTAP AWS中開
 === image:number4.png["第4名"] 從NetApp Cloud Central啟動Cloud Manager
 
 [role="quick-margin-para"]
-需要Cloud Manager軟體來部署和管理Cloud Volumes ONTAP 功能。從啟動Cloud Manager執行個體只需幾分鐘的時間 https://cloud.netapp.com["Cloud Central"^]。
+需要Cloud Manager軟體來部署和管理Cloud Volumes ONTAP 功能。從啟動Cloud Manager執行個體只需幾分鐘的時間 https://["Cloud Central"^]。
 
 
 

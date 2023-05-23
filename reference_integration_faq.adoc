@@ -82,8 +82,8 @@ NetApp會將所有本機使用者帳戶移轉至Cloud Central使用者帳戶。�
 
 如果您的系統使用LDAP、則NetApp無法自動將系統與Cloud Central整合。您需要手動執行下列步驟：
 
-. 從部署新的Cloud Manager系統 https://cloud.netapp.com/["NetApp Cloud Central"^]。
-. https://services.cloud.netapp.com/misc/federation-support["使用新系統設定LDAP"^]。
+. 從部署新的Cloud Manager系統 https://["NetApp Cloud Central"^]。
+. https://["使用新系統設定LDAP"^]。
 . link:task_adding_ontap_cloud.html["探索現有Cloud Volumes ONTAP 的系統"] 全新Cloud Manager系統。
 . 刪除舊的Cloud Manager系統。
 

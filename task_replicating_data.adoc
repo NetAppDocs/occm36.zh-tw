@@ -104,7 +104,7 @@ image:diagram_replication_snapvault_policy.png["此圖顯示 Snapshot 原則、�
 
 在複寫資料之前、您應該確認 Cloud Volumes ONTAP 是否同時滿足關於功能性的要求、包括功能性的系統和 ONTAP 功能性的叢集。
 
-版本需求:: 在複寫資料之前、您應該先確認來源和目的地磁碟區是否執行相容 ONTAP 的功能性更新。如需詳細資訊、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-dap/home.html["資料保護電源指南"^]。
+版本需求:: 在複寫資料之前、您應該先確認來源和目的地磁碟區是否執行相容 ONTAP 的功能性更新。如需詳細資訊、請參閱 http://["資料保護電源指南"^]。
 具體需求 Cloud Volumes ONTAP::
 +
 --
@@ -236,7 +236,7 @@ image:screenshot_replication_managing.gif["螢幕擷取畫面：顯示「複寫�
 
 IMPORTANT: 當您重新同步磁碟區時、目的地磁碟區上的內容會被來源磁碟區上的內容覆寫。
 
-若要執行反向重新同步、將目的地磁碟區的資料重新同步至來源磁碟區、請參閱 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
+若要執行反向重新同步、將目的地磁碟區的資料重新同步至來源磁碟區、請參閱 http://["《》《 9 Volume Disaster Recovery Express 指南》 ONTAP"^]。
 
 
 
